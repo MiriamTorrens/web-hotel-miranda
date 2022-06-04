@@ -1,0 +1,23 @@
+{
+  "name": "mirandaweb",
+  "version": "1.0.0",
+  "description": "Hotel hecho con CSS,HTML,SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"sass --watch sass/styles.scss:css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiriamTorrens/mirandaWeb.git"
+  },
+  "author": "MiriamTorrens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiriamTorrens/mirandaWeb/issues"
+  },
+  "homepage": "https://github.com/MiriamTorrens/mirandaWeb#readme",
+  "devDependencies": {
+    "sass": "^1.52.2"
+  }
+}
