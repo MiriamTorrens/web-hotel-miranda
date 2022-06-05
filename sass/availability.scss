@@ -9,10 +9,7 @@
     .availability__container{
         margin-left: 20px;
         margin-right: 20px;
-        .availability__arrival{
-            margin-top:36px;
-        }
-        .availability__departure{
+        .availability__arrival, .availability__departure{
             margin-top:36px;
         }
         .availability__input{
@@ -29,7 +26,6 @@
                 //Cambiar color calendario y ponerlo delante
             }
         }
-      
         .availability__button{
             background-color: #BEAD8E;
             width: 250px;
