@@ -1,0 +1,121 @@
+
+.rooms{
+    text-align: center;
+    & h5{
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        color: #777777;
+        margin-top:60px;
+    }
+    & h1{
+        margin-top:24px;
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: -1.2px;
+        color: #222222;
+    }
+    .rooms__icons{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        margin-left: 60px;
+        background-color: #FFFFFF;
+        width: 256px;
+        height: 40px;   
+        box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+        .rooms__iconsFirst{
+            margin-left:26px;
+        }
+        .rooms__iconsLast{
+            margin-right: 14.5px;
+        }
+    }
+    .rooms__slider{
+        z-index: 0;
+        margin-top: 44px;
+        width: 100%;
+        height: 244px;
+        background-image: url("../img/minimal_duplex_room.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .rooms__buttons{
+            position: absolute;
+            display: flex;
+            margin-top: 106px;
+            z-index: 1;
+            .rooms__button{
+                width: 32px;
+                height: 32px;
+                background-color: #FFFFFF;
+                margin-left: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: #BDAC8D;
+                    //cambiar color svg
+                }
+            }
+            .rooms__buttonLeft{
+                margin-left: 280px;
+            }
+        } 
+    }
+    .rooms__minimal{
+        z-index: 1;
+        margin-top: -20px;
+        width: 335px;
+        height: 215px;
+        margin-left:20px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+        text-align: center;
+        padding: 1px;
+        & h1{
+            margin-top: 19px;
+            font-family: 'Old Standard TT';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: -1.2px;
+            color: #222222;
+        }
+        & p{
+            margin: 0 auto;
+            margin-top: 12px;
+            width: 227px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #777777;
+        }
+        .rooms__price{
+            margin-top: 12px;
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 43px;
+            color: #BEAD8E;
+            .rooms__night{
+                font-size: 12px;
+            }
+        }
+        
+    }
+}
