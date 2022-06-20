@@ -11,11 +11,6 @@ body {
   min-width: 320;
 }
 
-@media only screen and (min-width: 1000px) {
-  .header {
-    background-color: blue;
-  }
-}
 .header {
   width: 100%;
   height: 70px;
@@ -855,6 +850,178 @@ body {
 .footer .footer__copyright .footer__links a {
   text-decoration: none;
   color: #222222;
+}
+
+.contactPage {
+  width: 100%;
+}
+.contactPage .contactPage__presentation {
+  height: 265px;
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 1px;
+}
+.contactPage .contactPage__presentation h5 {
+  margin-top: 75px;
+  margin-left: 20px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+}
+.contactPage .contactPage__presentation h1 {
+  margin-top: 16px;
+  margin-left: 20px;
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+.contactPage .contactPage__hotel .contactPage__data {
+  height: 189px;
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+}
+.contactPage .contactPage__hotel .contactPage__data img {
+  width: 40px;
+  height: 40px;
+  margin-left: 32px;
+  margin-top: 47px;
+}
+.contactPage .contactPage__hotel .contactPage__data .contactPage__hotelText {
+  margin-left: 27px;
+  width: 200px;
+}
+.contactPage .contactPage__hotel .contactPage__data .contactPage__hotelText h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 46.5px;
+  margin-bottom: 20px;
+}
+.contactPage .contactPage__hotel .contactPage__data .contactPage__hotelText .contactPage__subtitle {
+  font-family: "Archivo";
+  font-size: 15px;
+  color: #777777;
+}
+.contactPage .contactPage__hotelNumber {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 234px;
+  letter-spacing: -6px;
+  color: #F8F8F8;
+  margin-left: 130px;
+}
+.contactPage .contactPage__map {
+  width: 90%;
+  height: 200px;
+  background: #D4D4D4;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.contactPage .contactPage__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contactPage .contactPage__buttons button {
+  background: #BEAD8E;
+  color: white;
+  border: none;
+  margin-right: 20px;
+  padding: 15px;
+  font-family: "Roboto";
+}
+.contactPage .custom-map-control-button {
+  background: #333333;
+  color: #BEAD8E;
+  border: none;
+  margin-right: 20px;
+  padding: 15px;
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 18px;
+}
+.contactPage form {
+  text-align: center;
+  margin-top: 44px;
+  width: 90%;
+  margin: 0 auto;
+}
+.contactPage form .contactPage__inputs {
+  width: 100%;
+}
+.contactPage form .contactPage__inputs .contactPage__input {
+  width: 100%;
+  height: 67px;
+  background-color: #F8F8F8;
+  border: none;
+  margin-top: 16px;
+  padding-left: 20px;
+}
+.contactPage form .contactPage__textarea {
+  width: 100%;
+  height: 175px;
+  border: none;
+  background-color: #F8F8F8;
+  margin-top: 16px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.contactPage form .contactPage__button {
+  width: 258px;
+  height: 60px;
+  background: #BEAD8E;
+  color: #FFFFFF;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 3.2px;
+  margin-top: 36px;
+}
+@media only screen and (min-width: 1000px) {
+  .contactPage .contactPage__presentation h5, .contactPage .contactPage__presentation h1 {
+    margin-left: 150px;
+  }
+  .contactPage .contactPage__hotel {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 110px;
+  }
+  .contactPage .contactPage__map {
+    width: 80%;
+    height: 700px;
+  }
+  .contactPage form {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+  .contactPage form .contactPage__inputs {
+    column-count: 2;
+    column-gap: 19px;
+    column-fill: auto;
+    width: 100%;
+  }
+  .contactPage form .contactPage__textarea {
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

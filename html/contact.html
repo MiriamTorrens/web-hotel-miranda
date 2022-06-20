@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <title>Hotel Miranda Web</title>
+</head>
+<body>
+    <header class="header">
+        <img src="../img/iconos_svg/menu.svg" alt="menu" class="header__menuIcon" >
+        <div class="header__logo"><h3>H</h3></div>
+        <div class="header__text"><b>HOTEL</b><br/>MIRANDA</div>
+        <div class="header__icons">
+            <img src="../img/iconos_svg/user.svg" alt="user_icon">
+            <img src="../img/iconos_svg/search.svg" alt="search_icon" class="header__search">
+        </div>
+    </header>
+    <nav class="menu menu-active">
+        <span class="menu__option option1"><a href="#">About Us</a></span><br/>
+        <span class="menu__option"><a href="#">Rooms</a></span><br/>
+        <span class="menu__option"><a href="#">Offers</a></span><br/>
+        <span class="menu__option"><a href="#">Contact</a></span><br/>
+    </nav>
+    <main>
+        <div class="contactPage">
+            <div class="contactPage__presentation">
+                <h5>THE ULTIMATE LUXURY</h5>
+                <h1>New Details</h1>
+            </div>
+            <div class="contactPage__hotel">
+                <div class="contactPage__data">
+                    <img src="../img/map.png">
+                    <div class="contactPage__hotelText">
+                        <h1>Hotel Adress</h1>
+                        <span class="contactPage__subtitle">19/A, Cirikon City hall Tower New York, NYC</span>
+                    </div>
+                </div>
+                <!-- <div class="contactPage__hotelNumber">01</div> -->
+                <div class="contactPage__data">
+                    <img src="../img/phone.png">
+                    <div class="contactPage__hotelText">
+                        <h1>Phone Number</h1>
+                        <span class="contactPage__subtitle">+ 97656 8675 7864 7 <br/> + 876 766 8675 765 6</span>
+                    </div>
+                </div>
+                <!-- <div class="contactPage__hotelNumber">02</div> -->
+                <div class="contactPage__data">
+                    <img src="../img/email.png">
+                    <div class="contactPage__hotelText">
+                        <h1>Email</h1>
+                        <span class="contactPage__subtitle">info@webmail.com jobs.webmail@mail.com</span>
+                    </div>
+                </div>
+                <!-- <div class="contactPage__hotelNumber">03</div> -->
+            </div>
+            <div class="contactPage__map" id="map"></div>
+            <div class="contactPage__buttons">
+                <button>Find my nearest location</button>
+            </div>
+            <form>
+                <div class="contactPage__inputs">
+                    <input type="text" placeholder="Your full name" class="contactPage__input"><br>
+                    <input type="text" placeholder="Add phone number" class="contactPage__input"><br>
+                    <input type="text" placeholder="Enter email address" class="contactPage__input"><br>
+                    <input type="text" placeholder="Enter subject" class="contactPage__input"><br>
+                </div>
+                <textarea class="contactPage__input contactPage__textarea" placeholder="Enter message"></textarea>
+                <input type="submit" value="SEND" class="contactPage__button">
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <div class="footer__image">H</div>
+                <h1><b>HOTEL</b><br/>MIRANDA</h1>
+            </div>
+            <div class="footer__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</div>
+            <div class="footer__icons">
+                <img src="../img/iconos_svg/facebook.svg" class="footer__icon">
+                <img src="../img/iconos_svg/twitter.svg" class="footer__icon">
+                <img src="../img/iconos_svg/be.svg" class="footer__icon">
+                <img src="../img/iconos_svg/linkedin.svg" class="footer__icon">
+                <img src="../img/iconos_svg/youtube.svg" class="footer__icon">
+            </div>
+            <div class="footer__services">
+                <h1 class="footer__title">Services.</h1>
+                <div class="footer__service">
+                    <p>+ Restaurent & Bar</p>
+                    <p>+ Swimming Pool</p>
+                    <p>+ Wellness & Spa</p>
+                    <p>+ Restaurant</p>
+                    <p>+ Conference Room</p>
+                    <p>+ Coctail Party House</p>
+                    <p>+ Gaming Zone</p>
+                    <p>+ Marrige Party</p>
+                    <p>+ Party Planning</p>
+                    <p>+ Tour Consultancy</p>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <h1 class="footer__title">Contact Us.</h1>
+                <div class="footer__box">
+                    <img src="../img/phone.png"><br/>
+                    <div class="footer__boxTitle">Phone Number<br><span class="footer__boxSubtitle">+987 876 765 76 577</span></div>
+                </div>
+                <div class="footer__box">
+                    <img src="../img/email.png"><br/>
+                    <div class="footer__boxTitle">Email<br><span class="footer__boxSubtitle">hotelMiranda@miranda.com</span></div>
+                </div>
+                <div class="footer__box">
+                    <img src="../img/map.png"><br/>
+                    <div class="footer__boxTitle">Adress<br><span class="footer__boxSubtitle">03431 Cecile Parkway</span></div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright By@Miriam - 2022</p>
+            <div class="footer__links">
+                <a href="#"></a>Terms of use</a> | <a href="#">Privacy Environmental Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_G5rFQjSV3ZLuT-eBL-i_AiLV_NoCHhI&callback=initMap"></script> 
+</body>
+</html>
