@@ -78,30 +78,36 @@
         margin: 0 auto;
         margin-top: 24px;
     }
-    .contactPage__buttons{
-       width: 100%;
-       display: flex;
-       justify-content: center;
-       margin-top: 50px;
-       & button{
-        background: #BEAD8E;
-        color: white;
-        border: none;
-        margin-right: 20px;
-        padding: 15px;
+    .contactPage__buttons, .contactPage__search{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
         font-family: 'Roboto';
-       }
+        & button {
+            background-color: #333333;
+            color: #BEAD8E;
+            border: none;
+            border-radius: 8px;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        & select{
+            border-radius: 8px;
+            margin-right: 20px;
+            padding-left: 10px;
+        }
+        & input{
+            border-radius: 8px;
+            padding: 10px;
+            padding-left: 10px;
+            margin-right: 10px;
+        }
     }
-    .custom-map-control-button{
-        background: #333333;
-        color: #BEAD8E;
-        border: none;
-        margin-right: 20px;
-        padding: 15px;
+    .contactPage__results{
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
         font-family: 'Roboto';
-        font-weight: bold;
-        margin-bottom: 20px;
-        border-radius: 18px;
     }
     & form{
         text-align: center;

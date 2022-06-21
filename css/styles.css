@@ -928,30 +928,36 @@ body {
   margin: 0 auto;
   margin-top: 24px;
 }
-.contactPage .contactPage__buttons {
-  width: 100%;
+.contactPage .contactPage__buttons, .contactPage .contactPage__search {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-}
-.contactPage .contactPage__buttons button {
-  background: #BEAD8E;
-  color: white;
-  border: none;
-  margin-right: 20px;
-  padding: 15px;
+  margin-top: 20px;
   font-family: "Roboto";
 }
-.contactPage .custom-map-control-button {
-  background: #333333;
+.contactPage .contactPage__buttons button, .contactPage .contactPage__search button {
+  background-color: #333333;
   color: #BEAD8E;
   border: none;
+  border-radius: 8px;
   margin-right: 20px;
-  padding: 15px;
+  padding: 10px;
+}
+.contactPage .contactPage__buttons select, .contactPage .contactPage__search select {
+  border-radius: 8px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+.contactPage .contactPage__buttons input, .contactPage .contactPage__search input {
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.contactPage .contactPage__results {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
   font-family: "Roboto";
-  font-weight: bold;
-  margin-bottom: 20px;
-  border-radius: 18px;
 }
 .contactPage form {
   text-align: center;

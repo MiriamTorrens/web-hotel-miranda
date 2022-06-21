@@ -1,4 +1,3 @@
-
 const comunidadesAutonomas = [
 	'Andalucía',
 	'Aragón',
@@ -34,9 +33,12 @@ const hotels = [
 	{ lat: 41.927796, lng:-4.780745, dir: "Ampudia, Palencia"},
 	{ lat: 43.339641, lng: -5.562788, dir: "San Julián, 107, 33527 San Julián, Asturias"}
 ]
-const iconMarker = "../img/marker.png";
 
+const iconMarker = "../img/marker.png";
 let map;
+let currentPosition = [];
+let address;
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: {lat: 40.12103360652701, lng: -3.729048909994247},
@@ -49,14 +51,26 @@ function initMap() {
 			icon: iconMarker
 		});
 	};
-	
+
 	infoWindow = new google.maps.InfoWindow();
 
-	const locationButton = document.createElement("button");
-  
-	locationButton.textContent = "Pan to Current Location";
-	locationButton.classList.add("custom-map-control-button");
-	map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(locationButton);
+	//Encontrar la dirección que se introduce en el input
+	var geocoder = new google.maps.Geocoder();
+	const input = document.getElementById("inputAddress");
+	const button = document.getElementById("searchLocation");
+	button.addEventListener("click", () => {
+		address = input.value;
+        geocoder.geocode({ address: address}, function(results, status){
+			const pos = results[0].geometry.location;
+			infoWindow.setPosition(pos);
+			infoWindow.setContent("You're here!");
+			infoWindow.open(map);
+			map.setCenter(pos);
+        });
+	});
+
+	//Encontrar ubicación actual al pinchar en el botón
+	const locationButton = document.getElementById("location");
 	locationButton.addEventListener("click", () => {
 	  // Try HTML5 geolocation.
 	  if (navigator.geolocation) {
@@ -66,6 +80,7 @@ function initMap() {
 			  lat: position.coords.latitude,
 			  lng: position.coords.longitude,
 			};
+			currentPosition.push(pos);
 			infoWindow.setPosition(pos);
 			infoWindow.setContent("You're here!");
 			infoWindow.open(map);
@@ -73,24 +88,85 @@ function initMap() {
 		  },
 		  () => {
 			handleLocationError(true, infoWindow, map.getCenter());
-		  }
+		  },
 		);
 	  } else {
 		// Browser doesn't support Geolocation
 		handleLocationError(false, infoWindow, map.getCenter());
 	  }
-	});
-  }
-  
-  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-	infoWindow.setPosition(pos);
-	infoWindow.setContent(
-	  browserHasGeolocation
-		? "Error: The Geolocation service failed."
-		: "Error: Your browser doesn't support geolocation."
-	);
-	infoWindow.open(map);
-}
+		});
+	}
 
-window.initMap = initMap;
+	//Devolver lista de hoteles ordenados
+	const nearestButton = document.getElementById("nearest");
+	nearestButton.addEventListener("click", () => {
+		const destinations = hotels.map((hotel) => ({
+			lat: hotel.lat,
+			lng: hotel.lng
+		}));
+		if(currentPosition.length){
+			const origin = new google.maps.LatLng(
+				currentPosition[0].lat,
+				currentPosition[0].lng
+			);
+			calculateDistance(origin, destinations);
+		}else if(address){
+			calculateDistance(address, destinations)
+		}else{
+			alert("Define your position");
+		}
+	});
+
+	function calculateDistance(origin, destinations){
+		var service = new google.maps.DistanceMatrixService();
+		service
+			.getDistanceMatrix({
+				origins: [origin],
+				destinations: destinations,
+				travelMode: 'DRIVING',
+			})
+			.then((response) => {
+				console.log(response);
+				const sorted= response.rows[0].elements.sort(
+                    (a, b) => a.distance.value - b.distance.value
+                );
+
+				for(let dist of sorted){
+					const distance = document.createElement("li");
+					distance.innerText = dist.distance.text + " - " + dist.duration.text;
+					document.getElementById("results").appendChild(distance);
+				}
+			});
+	}
+
+	function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+		infoWindow.setPosition(pos);
+		infoWindow.setContent(
+		browserHasGeolocation
+			? "Error: The Geolocation service failed."
+			: "Error: Your browser doesn't support geolocation."
+		);
+		infoWindow.open(map);
+	}
+
+	const select = document.getElementById("select");
+	for(let comunidad of comunidadesAutonomas){
+		const option = document.createElement("option");
+		option.value = comunidad;
+		option.text = comunidad;
+		select.appendChild(option);
+	};
+
+	window.initMap = initMap;
+
+
+
+
+
+
+
+
+
+
+
 
