@@ -78,9 +78,11 @@
         margin: 0 auto;
         margin-top: 24px;
     }
-    .contactPage__buttons, .contactPage__search{
+    .contactPage__buttons{
+        width: 50%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        margin: 0 auto;
         margin-top: 20px;
         font-family: 'Roboto';
         & button {
@@ -91,12 +93,7 @@
             margin-right: 20px;
             padding: 10px;
         }
-        & select{
-            border-radius: 8px;
-            margin-right: 20px;
-            padding-left: 10px;
-        }
-        & input{
+        & input, & select{
             border-radius: 8px;
             padding: 10px;
             padding-left: 10px;
@@ -104,7 +101,7 @@
         }
     }
     .contactPage__results{
-        width: 200px;
+        width: 600px;
         margin: 0 auto;
         margin-top: 20px;
         font-family: 'Roboto';

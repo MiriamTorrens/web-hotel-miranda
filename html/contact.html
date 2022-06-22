@@ -56,14 +56,15 @@
                 <!-- <div class="contactPage__hotelNumber">03</div> -->
             </div>
             <div class="contactPage__map" id="map"></div>
+          
             <div class="contactPage__buttons">
-                <button class="contactPage__location" id="location">Current Location</button>
-                <button class="contactPage__nearest" id="nearest">Find my nearest location</button>
+                <div>
+                    <button class="contactPage__location" id="location">Current Location</button>
+                    <button class="contactPage__nearest" id="nearest">Find my nearest location</button>
+                    <input type="text" placeholder="Enter your address" class="contactPage__direction" id="inputAddress">
+                    <button id="searchLocation">Search</button>
+                </div>
                 <select class="contactPage__select" id="select"></select>
-            </div>
-            <div class="contactPage__search">
-                <input type="text" placeholder="Enter your address" class="contactPage__direction" id="inputAddress">
-                <button id="searchLocation">Search</button>
             </div>
             <div class="contactPage__results">
                 <ul id="results"></ul>

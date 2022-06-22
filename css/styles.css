@@ -928,13 +928,15 @@ body {
   margin: 0 auto;
   margin-top: 24px;
 }
-.contactPage .contactPage__buttons, .contactPage .contactPage__search {
+.contactPage .contactPage__buttons {
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-top: 20px;
   font-family: "Roboto";
 }
-.contactPage .contactPage__buttons button, .contactPage .contactPage__search button {
+.contactPage .contactPage__buttons button {
   background-color: #333333;
   color: #BEAD8E;
   border: none;
@@ -942,19 +944,14 @@ body {
   margin-right: 20px;
   padding: 10px;
 }
-.contactPage .contactPage__buttons select, .contactPage .contactPage__search select {
-  border-radius: 8px;
-  margin-right: 20px;
-  padding-left: 10px;
-}
-.contactPage .contactPage__buttons input, .contactPage .contactPage__search input {
+.contactPage .contactPage__buttons input, .contactPage .contactPage__buttons select {
   border-radius: 8px;
   padding: 10px;
   padding-left: 10px;
   margin-right: 10px;
 }
 .contactPage .contactPage__results {
-  width: 200px;
+  width: 600px;
   margin: 0 auto;
   margin-top: 20px;
   font-family: "Roboto";
