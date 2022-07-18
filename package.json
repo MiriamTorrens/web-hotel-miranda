@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass":"sass --watch sass/styles.scss:css/styles.css"
+    "sass": "sass --watch sass/styles.scss:css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,9 @@
   "bugs": {
     "url": "https://github.com/MiriamTorrens/mirandaWeb/issues"
   },
-  "homepage": "https://github.com/MiriamTorrens/mirandaWeb#readme",
+  "homepage": "https://miriamtorrens.github.io/web-hotel-miranda/",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.52.2"
   }
 }
