@@ -11,21 +11,24 @@ body {
   min-width: 320;
 }
 
-.header {
+.header .header__title {
+  display: none;
+}
+.header .header__container {
   width: 100%;
   height: 70px;
   display: flex;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   font-family: "Archivo";
 }
-.header .header__menuIcon {
+.header .header__container .header__menuIcon {
   width: 20px;
   height: 20px;
   margin-left: 20px;
   margin-top: 28px;
   margin-bottom: 34px;
 }
-.header .header__logo {
+.header .header__container .header__logo {
   display: flex;
   width: 36px;
   height: 36px;
@@ -35,27 +38,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-.header .header__text {
+.header .header__container .header__text {
   margin-top: 25px;
   margin-left: 13px;
   font-size: 11px;
 }
-.header .header__icons {
+.header .header__container .header__icons {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 103px;
 }
-.header .header__icons .header__search {
+.header .header__container .header__icons .header__search {
   margin-left: 28px;
 }
-
-.menu {
+.header .header__menu {
   display: none;
   width: 100%;
   height: 175px;
   margin-left: 20px;
 }
-.menu .menu__option {
+.header .header__menu .header__option {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
@@ -63,12 +65,65 @@ body {
   line-height: 17px;
   margin-top: 10px;
 }
-.menu .menu__option a {
+.header .header__menu .header__option a {
   text-decoration: none;
   color: black;
 }
-.menu .option1 {
+.header .header__menu .option1 {
   margin-top: 30px;
+}
+@media only screen and (min-width: 1000px) {
+  .header {
+    z-index: 1;
+    background-color: #222222;
+    padding: 2px;
+  }
+  .header .header__title {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 11px;
+  }
+  .header .header__container {
+    width: 80%;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 120px;
+  }
+  .header .header__container .header__menuIcon {
+    display: none;
+  }
+  .header .header__container .header__icons {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 70%;
+  }
+  .header .header__container .header__icons .header__user, .header .header__container .header__icons .header__search {
+    border: 1px solid rgba(133, 133, 133, 0.3019607843);
+    padding: 10px;
+  }
+  .header .header__container .header__icons .header__search {
+    margin-left: 15px;
+  }
+  .header .header__container .header__logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 17px;
+    margin-left: 31px;
+    font-size: 40px;
+  }
+  .header .header__container .header__text {
+    margin-top: 30px;
+    margin-left: 13px;
+    font-size: 26px;
+  }
 }
 
 .presentation {
@@ -125,8 +180,37 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: #333333;
 }
-.presentation .presentation__container .presentation__buttons .presentation__buttonLearn {
-  margin-top: 24px;
+.presentation .presentation__container .presentation__buttons .presentation__buttonTour {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 1000px) {
+  .presentation {
+    height: 700px;
+    margin-top: -65px;
+    z-index: 0;
+  }
+  .presentation .presentation__container {
+    margin-left: 300px;
+  }
+  .presentation .presentation__container h5 {
+    width: 375px;
+    font-size: 14px;
+    margin-top: 160px;
+  }
+  .presentation .presentation__container h1 {
+    font-size: 120px;
+    line-height: 130px;
+    width: 700px;
+    height: 250px;
+  }
+  .presentation .presentation__buttons {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 123px;
+  }
+  .presentation .presentation__buttons .presentation__buttonTour {
+    margin-right: 30px;
+  }
 }
 
 .availability {
@@ -158,6 +242,7 @@ body {
   filter: invert(1);
 }
 .availability .availability__container .availability__button {
+  margin: 0 auto;
   background-color: #BEAD8E;
   width: 250px;
   height: 60px;
@@ -175,6 +260,28 @@ body {
 .availability .availability__container .availability__button:hover {
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: #222222;
+}
+@media only screen and (min-width: 1000px) {
+  .availability {
+    height: 152px;
+  }
+  .availability .availability__container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 300px;
+  }
+  .availability .availability__container .availability__inputs {
+    display: block;
+    margin-right: 40px;
+  }
+  .availability .availability__container .availability__inputs input {
+    width: 330px;
+  }
+  .availability .availability__container .availability__button {
+    width: 250px;
+    height: 60px;
+  }
 }
 
 .about {

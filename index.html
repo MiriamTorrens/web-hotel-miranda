@@ -9,40 +9,45 @@
 </head>
 <body>
     <header class="header">
+        <p class="header__title">We Make Your Feel Comfortable</p>
         <div class="header__container">
-            <img src="img/iconos_svg/menu.svg" alt="menu" class="header__menuIcon" >
+            <img src="../img/iconos_svg/menu.svg" alt="menu" class="header__menuIcon">
             <div class="header__logo"><h3>H</h3></div>
-            <div class="header__text"><b>HOTEL</b><br/>MIRANDA</div>
+            <div class="header__text"><b>HOTEL</b><br />MIRANDA</div>
+            <nav class="header__menu">
+                <span class="header__option option1"><a href="#">About Us</a></span><br />
+                <span class="header__option"><a href="#">Rooms</a></span><br />
+                <span class="header__option"><a href="#">Offers</a></span><br />
+                <span class="header__option"><a href="#">Contact</a></span><br />
+            </nav>
             <div class="header__icons">
-                <img src="img/iconos_svg/user.svg" alt="user_icon">
-                <img src="img/iconos_svg/search.svg" alt="search_icon" class="header__search">
+                <img src="../img/iconos_svg/user.svg" alt="user_icon" class="header__user">
+                <img src="../img/iconos_svg/search.svg" alt="search_icon" class="header__search">
             </div>
         </div>
     </header>
-    <nav class="menu menu-active">
-        <span class="menu__option option1"><a href="#">About Us</a></span><br/>
-        <span class="menu__option"><a href="#">Rooms</a></span><br/>
-        <span class="menu__option"><a href="#">Offers</a></span><br/>
-        <span class="menu__option"><a href="#">Contact</a></span><br/>
-    </nav>
     <main>
         <div class="presentation">
             <div class="presentation__container">
-                <h5>THE ULTIMATE LUXURY<br/>EXPERIENCE</h5>
-                <h1>The Perfect<br/> Base For You</h1>
+                <h5>THE ULTIMATE LUXURY EXPERIENCE</h5>
+                <h1>The Perfect Base For You</h1>
                 <div class="presentation__buttons">
-                    <div class="presentation__button">TAKE A TOUR</div>
-                    <div class="presentation__button presentation__buttonLearn">LEARN MORE</div>
+                    <div class="presentation__button presentation__buttonTour">TAKE A TOUR</div>
+                    <div class="presentation__button">LEARN MORE</div>
                 </div>
             </div>
         </div>
         <div class="availability">
             <div class="availability__container">
                 <!-- Convertir párrafo en label -->
-                <p>Arrival Date</p>
-                <input type="date" name="arrival">
-                <p>LeDeparture Date</p>
-                <input type="date" name="departure">
+                <div class="availability__inputs">
+                    <p>Arrival Date</p>
+                    <input type="date" name="arrival">
+                </div>
+                <div class="availability__inputs">
+                    <p>Departure Date</p>
+                    <input type="date" name="departure">
+                </div>
                 <div class="availability__button">CHECK AVAILABILITY</div>
             </div> 
         </div>

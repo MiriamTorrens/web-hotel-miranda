@@ -124,7 +124,7 @@ function initMap() {
 	}
 
 	//Crear el Select para las Comunidades Autónomas
-	const comunidadesAutonomas = [
+	const communities = [
 		'Andalucía',
 		'Aragón',
 		'Asturias, Principado de',
@@ -146,10 +146,10 @@ function initMap() {
 		'Melilla',
 	];
 	const select = document.getElementById("select");
-	for(let comunidad of comunidadesAutonomas){
+	for(let community of communities){
 		const option = document.createElement("option");
-		option.value = comunidad;
-		option.text = comunidad;
+		option.value = community;
+		option.text = community;
 		select.appendChild(option);
 	};
 
@@ -167,6 +167,7 @@ function initMap() {
 		{ lat: 41.927796, lng:-4.780745 },
 		{ lat: 43.339641, lng: -5.562788 }
 	]
+
 	
 	
 

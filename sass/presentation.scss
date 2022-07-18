@@ -50,9 +50,37 @@
                     background-color: #333333;
                 } 
             }
-            .presentation__buttonLearn{
-                margin-top:24px;
+            .presentation__buttonTour{
+                margin-bottom:24px;
             }
         }
     }  
+
+    @media only screen and (min-width: 1000px) {
+        height: 700px;
+        margin-top: -65px;
+        z-index: 0;
+        .presentation__container {
+            margin-left: 300px;
+            & h5 {
+                width: 375px;
+                font-size: 14px;
+                margin-top: 160px;
+            }
+            & h1{
+                font-size: 120px;
+                line-height: 130px;
+                width: 700px;
+                height: 250px;
+            }
+        }
+        .presentation__buttons {
+           display: flex;
+           margin-top: 32px;
+           margin-bottom: 123px;
+            .presentation__buttonTour {
+                margin-right: 30px;
+            }
+        }
+    }
 }

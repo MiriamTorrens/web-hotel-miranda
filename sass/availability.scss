@@ -28,6 +28,7 @@
             }
         }
         .availability__button{
+            margin: 0 auto;
             background-color: #BEAD8E; 
             width: 250px;
             height: 60px;   
@@ -44,6 +45,27 @@
             &:hover{
                 border: 2px solid rgba(255, 255, 255, 0.33);
                 background-color: #222222;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        height: 152px;
+        .availability__container {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin-left: 300px;
+            .availability__inputs{
+                display: block;
+                margin-right: 40px;
+                & input {
+                    width: 330px;
+                }
+            }
+            .availability__button {
+                width: 250px;
+                height: 60px;
             }
         }
     }
