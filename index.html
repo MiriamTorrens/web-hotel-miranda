@@ -1,241 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <title>Hotel Miranda Web</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <p class="header__title">We Make Your Feel Comfortable</p>
-        <div class="header__container">
-            <img src="./img/iconos_svg/menu.svg" alt="menu" class="header__menuIcon">
-            <div class="header__logo"><h3>H</h3></div>
-            <div class="header__text"><b>HOTEL</b><br />MIRANDA</div>
-            <nav class="header__menu">
-                <span class="header__option option1"><a href="#">About Us</a></span><br />
-                <span class="header__option"><a href="#">Rooms</a></span><br />
-                <span class="header__option"><a href="#">Offers</a></span><br />
-                <span class="header__option"><a href="#">Contact</a></span><br />
-            </nav>
-            <div class="header__icons">
-                <img src="./img/iconos_svg/user.svg" alt="user_icon" class="header__user">
-                <img src="./img/iconos_svg/search.svg" alt="search_icon" class="header__search">
-            </div>
+      <div class="header__title">We Make Your Feel Comfortable</div>
+      <div class="header__container" id="header">
+        <div class="header__left">
+          <img
+            src="./img/iconos_svg/menu.svg"
+            alt="menu"
+            class="header__burger"
+            id="menu-icon"
+          />
+          <a href="index.html"
+            ><div class="header__logo"><h3>H</h3></div></a
+          >
+          <div class="header__text"><b>HOTEL</b><br />MIRANDA</div>
         </div>
+        <nav class="header__menu" id="menu">
+          <a href="./html/about.html"><p>About Us</p></a>
+          <a href="./html/rooms.html"><p>Rooms</p></a>
+          <a href="./html/offers.html"><p>Offers</p></a>
+          <a href="./html/contact.html"><p>Contact</p></a>
+        </nav>
+        <div class="header__icons">
+          <img
+            src="./img/iconos_svg/user.svg"
+            alt="user_icon"
+            class="header__icons-user"
+          />
+          <img
+            src="./img/iconos_svg/search.svg"
+            alt="search_icon"
+            class="header__icons-search"
+          />
+        </div>
+      </div>
+      <div class="header__menu-burger" id="menu-burger"></div>
     </header>
     <main>
-        <div class="presentation">
-            <div class="presentation__container">
-                <h5>THE ULTIMATE LUXURY EXPERIENCE</h5>
-                <h1>The Perfect Base For You</h1>
-                <div class="presentation__buttons">
-                    <div class="presentation__button presentation__buttonTour">TAKE A TOUR</div>
-                    <div class="presentation__button">LEARN MORE</div>
-                </div>
-            </div>
+      <div class="presentation">
+        <div class="presentation__container">
+          <p>THE ULTIMATE LUXURY EXPERIENCE</p>
+          <p>
+            The Perfect<br />
+            Base For You
+          </p>
+          <a href="./html/rooms.html"
+            ><button class="presentation__tour">TAKE A TOUR</button></a
+          >
+          <a href="./html/about.html"
+            ><button class="presentation__learn">LEARN MORE</button></a
+          >
         </div>
-        <div class="availability">
-            <div class="availability__container">
-                <!-- Convertir párrafo en label -->
-                <div class="availability__inputs">
-                    <p>Arrival Date</p>
-                    <input type="date" name="arrival">
-                </div>
-                <div class="availability__inputs">
-                    <p>Departure Date</p>
-                    <input type="date" name="departure">
-                </div>
-                <div class="availability__button">CHECK AVAILABILITY</div>
-            </div> 
+      </div>
+      <div class="availability">
+        <form class="availability__form" id="form">
+          <div class="availability__input">
+            <label for="arrival">Arrival Date</label><br />
+            <input type="date" name="arrival" class="availability_input" />
+          </div>
+          <div class="availability__input availability__departure">
+            <label for="departure">Departure Date</label><br />
+            <input type="date" name="departure" class="availability_input" />
+          </div>
+          <input
+            type="submit"
+            value="CHECK AVAILABILITY"
+            class="availability__submit"
+          />
+        </form>
+      </div>
+      <div class="discover">
+        <div class="discover__text">
+          <p>ABOUT US</p>
+          <h1>Discover Our Underground.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <button class="discover__button">BOOK NOW</button>
         </div>
-        <div class="about">
-            <div class="about__container">
-                <div class="about__text">
-                    <h5>ABOUT US</h5>
-                    <h1>Discover Our<br/>Underground.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="about__button">BOOK NOW</div>
-                </div>
-                <div class="about__images">
-                    <div class="about__image1"></div>
-                    <div class="about__team">
-                        <div class="about__teamImage"></div>
-                        <h1>Strong Team</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                    <div class="about__image2"></div>
-                    <div class="about__luxury">
-                        <img src="img/iconos_svg/calendar.svg" alt="calendar_icon">
-                        <h1>Luxury Room</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="discover__images">
+          <div class="discover__image discover__image1"></div>
+          <div class="discover__image discover__team">
+            <img src="./img/iconos_svg/team.svg" />
+            <h1>Strong Team</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
+          <div class="discover__image discover__image2"></div>
+          <div class="discover__image discover__luxury">
+            <img src="img/iconos_svg/calendar.svg" alt="calendar_icon" />
+            <h1>Luxury Room</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor.
+            </p>
+          </div>
         </div>
-        <div class="rooms">
-            <h5>ROOMS</h5>
-            <h1>Hand Picked Rooms</h1>
-            <div class="rooms__icons">
-                <img src="img/iconos_svg/bed.svg" alt="bed_icon" class="rooms__iconsFirst">
-                <img src="img/iconos_svg/wifi.svg" alt="wifi_icon">
-                <img src="img/iconos_svg/car.svg" alt="car_icon">
-                <img src="img/iconos_svg/air.svg" alt="air_icon">
-                <img src="img/iconos_svg/gym.svg" alt="gym_icon">
-                <img src="img/iconos_svg/smoke.svg" alt="smoke_icon">
-                <img src="img/iconos_svg/bar.svg" alt="bar_icon" class="rooms__iconsLast">
-            </div>
-            <div class="rooms__slider">
-                <div class="rooms__buttons">
-                    <div class="rooms__button"><img src="img/iconos_svg/prev.svg"></div>
-                    <div class="rooms__button rooms__buttonLeft"><img src="img/iconos_svg/next.svg"></div>
-                </div> 
-            </div>
-            <div class="rooms__minimal">
-                <h1>Minimal Duplex Room</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                <p class="rooms__price">$345<span class="rooms__night">/Night</span></p>
-            </div>
+      </div>
+      <div class="slider">
+        <h5>ROOMS</h5>
+        <h1>Hand Picked Rooms</h1>
+        <div class="slider__icons">
+          <img src="img/iconos_svg/bed.svg" alt="bed_icon" />
+          <img src="img/iconos_svg/wifi.svg" alt="wifi_icon" />
+          <img src="img/iconos_svg/car.svg" alt="car_icon" />
+          <img src="img/iconos_svg/air.svg" alt="air_icon" />
+          <img src="img/iconos_svg/gym.svg" alt="gym_icon" />
+          <img src="img/iconos_svg/smoke.svg" alt="smoke_icon" />
+          <img src="img/iconos_svg/bar.svg" alt="bar_icon" />
         </div>
-        <div class="video">
-            <div class="video__container">
-                <h5>INTRO VIDEO</h5>
-                <h1>Meet With<br/>Our Luxury<br/>Place.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
-                <video src="media/Hotel Miranda in Bayahibe Dom. Rep. 4K.mp4" controls class="video__media" width="335" height="270" type="video/mp4">Video not found</video>
-                <div class="video__button">BOOK NOW</div>
-            </div>
+        <div class="slider__images swiper">
+          <div class="slider__wraper swiper-wrapper">
+            <img src="./img/slide1.jpg" class="slider__item swiper-slide" />
+            <img src="./img/slide2.jpg" class="slider__item swiper-slide" />
+            <img src="./img/slide3.jpg" class="slider__item swiper-slide" />
+            <img src="./img/slide4.jpg" class="slider__item swiper-slide" />
+          </div>
+          <div class="slider__button swiper-button-prev"></div>
+          <div class="slider__button swiper-button-next"></div>
         </div>
-        <div class="facilities">
-            <h5>FACILITIES</h5>
-            <h1>Core Features</h1>
-            <div class="facilities__slider">
-                <img src="img/iconos_svg/rating.svg" alt="rating_icon" class="facilities__sliderIcon">
-                <div class="facilities__sliderTitle">Have High Rating</div>
-                <div class="facilities__sliderText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</div>
-                <div class="facilities__sliderButtons">
-                    <img src="img/iconos_svg/buttonSliderActive.svg">
-                    <img src="img/iconos_svg/buttonSlider.svg">
-                    <img src="img/iconos_svg/buttonSlider.svg">
-                    <img src="img/iconos_svg/buttonSlider.svg">
-                    <img src="img/iconos_svg/buttonSlider.svg">
-                    <img src="img/iconos_svg/buttonSlider.svg">
-                </div>
-            </div>
+        <!-- <div class="slider__text">
+          <h1>Minimal Duplex Room</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <p class="slider__text-price">
+            $345<span class="slider__text-small">/Night</span>
+          </p>
+        </div> -->
+      </div>
+      <div class="video">
+        <div class="video__container">
+          <h5>INTRO VIDEO</h5>
+          <h1>Meet With Our Luxury Place.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat you have to understand this.
+          </p>
+          <video
+            src="media/Hotel Miranda in Bayahibe Dom. Rep. 4K.mp4"
+            controls
+            class="video__media"
+            width="335"
+            height="270"
+            type="video/mp4"
+          >
+            Video not found
+          </video>
+          <button class="video__button">BOOK NOW</button>
         </div>
-        <div class="foods">
-            <div class="foods__icon"></div>
-            <h5>MENU</h5>
-            <h1>Our Foods Menu</h1>
-            <div class="foods__images">
-                <div class="foods__image foods__eggs" alt="eggs&bacon"></div>
-                <div class="foods__text">
-                    <div class="foods__name">Eggs & Bacon</div>
-                    <div class="foods__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</div>
-                </div>
-            </div>
-            <div class="foods__images">
-                <div class="foods__image foods__tea" alt="tea&coffe"></div>
-                <div class="foods__text">
-                    <div class="foods__name">Tea or Coffee</div>
-                    <div class="foods__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</div>
-                </div>
-            </div>
-            <div class="foods__images">
-                <div class="foods__image foods__chia" alt="chia_oatmeal"></div>
-                <div class="foods__text">
-                    <div class="foods__name">Chia Oatmeal</div>
-                    <div class="foods__description">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</div>
-                </div>
-            </div>
-            <div class="foods__buttons">
-                <div class="foods__button"><img src="img/iconos_svg/prev.svg"></div>
-                <div class="foods__button"><img src="img/iconos_svg/next.svg"></div>
-            </div>
-            <div class="foods__slider"></div>
-            <div class="foods__sliderButtons">
-                <img src="img/iconos_svg/buttonSlider.svg">
-                <img src="img/iconos_svg/buttonSliderActive.svg">
-                <img src="img/iconos_svg/buttonSlider.svg">
-            </div>
+      </div>
+      <div class="facilities">
+        <h5>FACILITIES</h5>
+        <h1>Core Features</h1>
+        <div class="facilities__slider">
+          <img
+            src="img/iconos_svg/rating.svg"
+            alt="rating_icon"
+            class="facilities__sliderIcon"
+          />
+          <div class="facilities__sliderTitle">Have High Rating</div>
+          <div class="facilities__sliderText">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna..
+          </div>
+          <div class="facilities__sliderButtons">
+            <img src="img/iconos_svg/buttonSliderActive.svg" />
+            <img src="img/iconos_svg/buttonSlider.svg" />
+            <img src="img/iconos_svg/buttonSlider.svg" />
+            <img src="img/iconos_svg/buttonSlider.svg" />
+            <img src="img/iconos_svg/buttonSlider.svg" />
+            <img src="img/iconos_svg/buttonSlider.svg" />
+          </div>
         </div>
-        <div class="projects">
-            <div class="projects__project">
-                <div class="projects__icon projects__rocket"></div>
-                <h1>84k<span class="projects__plus">+</span></h1>
-                <h2>Projects are Completed</h2>
+      </div>
+      <div class="foods">
+        <div class="foods__icon"></div>
+        <h5>MENU</h5>
+        <h1>Our Foods Menu</h1>
+        <div class="foods__images">
+          <div class="foods__image foods__eggs" alt="eggs&bacon"></div>
+          <div class="foods__text">
+            <div class="foods__name">Eggs & Bacon</div>
+            <div class="foods__description">
+              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+              eiusmod tempor.
             </div>
-            <div class="projects__project">
-                <div class="projects__icon projects__group"></div>
-                <h1>10M<span class="projects__plus">+</span></h1>
-                <h2>Active Backers Around World</h2>
-            </div>
-            <div class="projects__project">
-                <div class="projects__icon projects__categories"></div>
-                <h1>02k<span class="projects__plus">+</span></h1>
-                <h2>Categories Served</h2>
-            </div>
-            <div class="projects__project">
-                <div class="projects__icon projects__book"></div>
-                <h1>100M<span class="projects__plus">+</span></h1>
-                <h2>Idea Raised Funds</h2>
-            </div>
+          </div>
         </div>
+        <div class="foods__images">
+          <div class="foods__image foods__tea" alt="tea&coffe"></div>
+          <div class="foods__text">
+            <div class="foods__name">Tea or Coffee</div>
+            <div class="foods__description">
+              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+              eiusmod tempor.
+            </div>
+          </div>
+        </div>
+        <div class="foods__images">
+          <div class="foods__image foods__chia" alt="chia_oatmeal"></div>
+          <div class="foods__text">
+            <div class="foods__name">Chia Oatmeal</div>
+            <div class="foods__description">
+              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+              eiusmod tempor.
+            </div>
+          </div>
+        </div>
+        <div class="foods__buttons">
+          <div class="foods__button"><img src="img/iconos_svg/prev.svg" /></div>
+          <div class="foods__button"><img src="img/iconos_svg/next.svg" /></div>
+        </div>
+        <div class="foods__slider"></div>
+        <div class="foods__sliderButtons">
+          <img src="img/iconos_svg/buttonSlider.svg" />
+          <img src="img/iconos_svg/buttonSliderActive.svg" />
+          <img src="img/iconos_svg/buttonSlider.svg" />
+        </div>
+      </div>
+      <div class="projects">
+        <div class="projects__project">
+          <div class="projects__icon projects__rocket"></div>
+          <h1>84k<span class="projects__plus">+</span></h1>
+          <h2>Projects are Completed</h2>
+        </div>
+        <div class="projects__project">
+          <div class="projects__icon projects__group"></div>
+          <h1>10M<span class="projects__plus">+</span></h1>
+          <h2>Active Backers Around World</h2>
+        </div>
+        <div class="projects__project">
+          <div class="projects__icon projects__categories"></div>
+          <h1>02k<span class="projects__plus">+</span></h1>
+          <h2>Categories Served</h2>
+        </div>
+        <div class="projects__project">
+          <div class="projects__icon projects__book"></div>
+          <h1>100M<span class="projects__plus">+</span></h1>
+          <h2>Idea Raised Funds</h2>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__logo">
-                <div class="footer__image">H</div>
-                <h1><b>HOTEL</b><br/>MIRANDA</h1>
-            </div>
-            <div class="footer__text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</div>
-            <div class="footer__icons">
-                <img src="./img/iconos_svg/facebook.svg" class="footer__icon">
-                <img src="./img/iconos_svg/twitter.svg" class="footer__icon">
-                <img src="./img/iconos_svg/be.svg" class="footer__icon">
-                <img src="./img/iconos_svg/linkedin.svg" class="footer__icon">
-                <img src="./img/iconos_svg/youtube.svg" class="footer__icon">
-            </div>
-            <div class="footer__services">
-                <h1 class="footer__title">Services.</h1>
-                <div class="footer__service">
-                    <p>+ Restaurent & Bar</p>
-                    <p>+ Swimming Pool</p>
-                    <p>+ Wellness & Spa</p>
-                    <p>+ Restaurant</p>
-                    <p>+ Conference Room</p>
-                    <p>+ Coctail Party House</p>
-                    <p>+ Gaming Zone</p>
-                    <p>+ Marrige Party</p>
-                    <p>+ Party Planning</p>
-                    <p>+ Tour Consultancy</p>
-                </div>
-            </div>
-            <div class="footer__contact">
-                <h1 class="footer__title">Contact Us.</h1>
-                <div class="footer__box">
-                    <img src="img/phone.png"><br/>
-                    <div class="footer__boxTitle">Phone Number<br><span class="footer__boxSubtitle">+987 876 765 76 577</span></div>
-                </div>
-                <div class="footer__box">
-                    <img src="img/email.png"><br/>
-                    <div class="footer__boxTitle">Email<br><span class="footer__boxSubtitle">hotelMiranda@miranda.com</span></div>
-                </div>
-                <div class="footer__box">
-                    <img src="img/map.png"><br/>
-                    <div class="footer__boxTitle">Adress<br><span class="footer__boxSubtitle">03431 Cecile Parkway</span></div>
-                </div>
-            </div>
-           
+      <div class="footer__container">
+        <div class="footer__text">
+          <img src="./img/Logo.png" />
+          <p>
+            Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+            eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi
+          </p>
+          <div class="footer__icons">
+            <img src="./img/iconos_svg/facebook.svg" class="footer__icon" />
+            <img src="./img/iconos_svg/twitter.svg" class="footer__icon" />
+            <img src="./img/iconos_svg/be.svg" class="footer__icon" />
+            <img src="./img/iconos_svg/linkedin.svg" class="footer__icon" />
+            <img src="./img/iconos_svg/youtube.svg" class="footer__icon" />
+          </div>
         </div>
-        <div class="footer__copyright">
-            <p>Copyright By@Miriam - 2022</p>
-            <div class="footer__links">
-                <a href="#"></a>Terms of use</a> | <a href="#">Privacy Environmental Policy</a>
-            </div>
+        <div class="footer__services">
+          <h1 class="footer__title">Services.</h1>
+          <div class="footer__service">
+            <p>+ Restaurent & Bar</p>
+            <p>+ Swimming Pool</p>
+            <p>+ Wellness & Spa</p>
+            <p>+ Restaurant</p>
+            <p>+ Conference Room</p>
+            <p>+ Coctail Party House</p>
+            <p>+ Gaming Zone</p>
+            <p>+ Marrige Party</p>
+            <p>+ Party Planning</p>
+            <p>+ Tour Consultancy</p>
+          </div>
         </div>
+        <div class="footer__contact">
+          <h1 class="footer__title">Contact Us.</h1>
+          <div class="footer__box">
+            <img src="img/phone.png" /><br />
+            <div class="footer__box-title">
+              Phone Number<br /><span class="footer__box-subtitle"
+                >+987 876 765 76 577</span
+              >
+            </div>
+          </div>
+          <div class="footer__box">
+            <img src="img/email.png" /><br />
+            <div class="footer__box-title">
+              Email<br /><span class="footer__box-subtitle"
+                >hotelMiranda@miranda.com</span
+              >
+            </div>
+          </div>
+          <div class="footer__box">
+            <img src="img/map.png" /><br />
+            <div class="footer__box-title">
+              Adress<br /><span class="footer__box-subtitle"
+                >03431 Cecile Parkway</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>Copyright By@Miriam - 2022</p>
+        <div class="footer__copyright-links">
+          <a href="#">Terms of use</a> |
+          <a href="#">Privacy Environmental Policy</a>
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>

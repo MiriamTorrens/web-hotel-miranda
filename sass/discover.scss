@@ -1,0 +1,131 @@
+.discover{
+    &__text{
+        font-family: 'Archivo';
+        background: #F9F9F9;
+        padding: 30px 20px;
+        font-size: 14px;
+        & p:first-child{
+            font-weight: 700;
+            font-size: 0.9em;
+            color: #777777;
+            letter-spacing: 2.8px;
+        }
+        & h1{
+            margin-top: 30px;
+            font-family: 'Old Standard TT';
+            font-weight: 400;
+            font-size: 3.2em;
+            line-height: 60px;
+            letter-spacing: -1.2px;
+        }
+        & p{
+            font-size: 0.85em;
+            font-weight: 400;
+            line-height: 24px;
+            color: #777777;
+            margin-top: 16px;
+        }
+        & button{
+            width: 200px;
+            height: 50px;
+            border: none;
+            background-color: #BDAC8D;
+            font-weight: 700;
+            font-size: 1em;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            color: #FFFFFF;
+            margin-top: 24px;             
+        }
+    }
+    &__images{
+        font-size: 14px;
+        & img {
+            margin-top: 54px;
+        }
+        & h1 {
+            font-family: 'Old Standard TT';
+            font-weight: 400;
+            font-size: 2em;
+            line-height: 30px;
+            letter-spacing: -0.9px;
+            margin-top: 30px;
+        }
+        & p {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 22px;
+            margin-top: 21px;
+        }
+        .discover__image{
+            width: 250px;
+            height: 280px;
+            margin: auto;
+        }
+        .discover__image1 {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url("../img/reception.jpg");
+        }
+        .discover__team{
+            text-align: center;
+            background-image: url("../img/iconos_svg/backgroundTeam.svg");
+            background-repeat: no-repeat;
+            background-position: right 50px;
+            color: #111;
+            box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+        }
+        .discover__image2{
+            margin-top: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url("../img/luxury-room.jpg");
+        }
+        .discover__luxury{
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+        }
+    }
+    @media only screen and (min-width: 600px) {
+        &__text{
+            & p{
+                font-size: 1em;
+            }
+        }
+        &__images{
+            margin-top: 20px;
+            display: grid;
+            grid-template-areas: 50% 50% / 50% 50%;
+            align-content: center;
+            justify-content: center;
+            gap:20px;
+            .discover__image {
+                margin: 0;
+                max-width: 250px;
+            }
+            .discover__image1 {
+                grid-column: 2;
+                grid-row: 1;
+            }
+            .discover__team {
+                grid-column: 1;
+            }
+        }
+    }
+    @media only screen and (min-width: 1000px) {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        &__text{
+            grid-column: 2;
+        }
+        &__images {
+            grid-column: 1;
+            grid-row: 1;
+            justify-content: end;
+        }
+    }
+}

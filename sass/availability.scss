@@ -1,72 +1,54 @@
-
 .availability{
     font-family: 'Roboto';
-    width: 100%;
-    height: 354px;
+    padding-bottom: 36px;
     background-color: #222222;
     color: #FFFFFF;
-    padding:1px;
-    .availability__container{
+    
+    &__form{
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 6px;
-        & p{
-            margin-top:36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & label {
+            display: inline-block;
+            margin-top: 36px;
         }
-        & input{
+        .availability__input{
+            padding: 5px;
             width: 100%;
-            margin-top: 10px;
-            border: none;
-            color: #BEAD8E;
-            background-color: #222222;
-            border-bottom: 2px solid #BEAD8E;
-            padding:14px;
-            //Bajar opacidad de texto placeholder
-            &[type="date"]::-webkit-calendar-picker-indicator{
-                filter: invert(1);
-                //Cambiar color calendario y ponerlo delante
-            }
-        }
-        .availability__button{
-            margin: 0 auto;
-            background-color: #BEAD8E; 
-            width: 250px;
-            height: 60px;   
-            margin-top:42px;  
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-            font-family: 'Archivo';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 15px;
-            letter-spacing: 2.8px;
-            &:hover{
-                border: 2px solid rgba(255, 255, 255, 0.33);
+            & input{
+                width: 270px;
+                border: none;
+                color: #BEAD8E;
                 background-color: #222222;
-            }
+                border-bottom: 2px solid #BEAD8E;
+                padding: 14px;
+                &[type="date"]::-webkit-calendar-picker-indicator {
+                    filter: invert(1);   
+                }
+            }                
+        }
+        .availability__submit {
+            background-color: #BEAD8E;
+            border: none;
+            color: #fff;
+            width: 240px;
+            height: 60px;
+            margin-top: 42px;
+            font-family: 'Archivo';
+            font-weight: 700;
+            font-size: 14px; 
+            letter-spacing: 2.8px;    }
+        }   
+    @media only screen and (min-width: 600px) {
+        .availability__input {
+            width: 50%;
         }
     }
-
-    @media only screen and (min-width: 1000px) {
-        height: 152px;
-        .availability__container {
-            display: flex;
-            justify-content: center;
-            width: 80%;
-            margin-left: 300px;
-            .availability__inputs{
-                display: block;
-                margin-right: 40px;
-                & input {
-                    width: 330px;
-                }
-            }
-            .availability__button {
-                width: 250px;
-                height: 60px;
-            }
+    @media only screen and (min-width: 900px) {
+        .availability__input {
+            width: 30%;
         }
     }
 }

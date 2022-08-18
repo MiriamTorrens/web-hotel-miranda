@@ -1,0 +1,53 @@
+.slider{
+    text-align: center;
+    font-size: 14px;
+    padding: 50px 0;
+    & h5{
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 1em;
+        letter-spacing: 2.8px;
+        color: #777777;
+    }
+    & h1 {
+        margin-top: 24px;
+        font-family: 'Old Standard TT';
+        font-weight: 400;
+        font-size: 3.2em;
+        letter-spacing: -1.2px;
+        color: #222222;
+    }
+    &__icons{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        width: 256px;
+        height: 40px;
+        box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+    }
+    &__images{
+        z-index: 0;
+        margin-top: 24px;
+    }
+    &__item{
+        max-width: 770px;
+        max-height: 500px;
+    }
+    &__button{
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        color: #111;
+        --swiper-navigation-size: 10px;
+        &:hover{
+            background-color: #BDAC8D;
+            color: #fff;
+        }
+    }
+}
