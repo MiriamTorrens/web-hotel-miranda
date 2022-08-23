@@ -15,7 +15,7 @@ body {
   font-family: "Archivo";
   font-size: 16px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: #fff;
 }
@@ -728,6 +728,65 @@ body {
   letter-spacing: 2.8px;
   color: #FFFFFF;
   margin-top: 24px;
+}
+
+.facilities {
+  font-family: "Archivo";
+  font-size: 14px;
+  padding: 30px 20px;
+}
+.facilities h5 {
+  color: #777777;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-align: center;
+}
+.facilities h1 {
+  padding: 15px 0;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3.2em;
+  letter-spacing: -1.2px;
+}
+.facilities .slider__pagination {
+  --swiper-theme-color: #BDAC8D;
+}
+.facilities .slider__facilities {
+  width: 100%;
+  max-width: 300px;
+}
+.facilities .slider__facilities-item {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.facilities .slider__facilities-number {
+  font-weight: 700;
+  font-size: 7em;
+  line-height: 130px;
+  color: rgba(34, 34, 34, 0.0392156863);
+  align-self: flex-end;
+}
+.facilities .slider__facilities-img {
+  width: 20%;
+  margin-top: -60px;
+}
+.facilities .slider__facilities-title {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 30px;
+}
+.facilities .slider__facilities-text {
+  color: #777777;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */

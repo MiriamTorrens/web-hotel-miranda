@@ -14,19 +14,34 @@ menuIcon.addEventListener("click", () => {
   }
 });
 
-//SLIDER
-const swiper = new Swiper(".swiper", {
+//SLIDER ROOMS
+const swiper = new Swiper(".slider__images", {
   direction: "horizontal",
   loop: true,
   slidesPerView: "auto",
   centeredSlides: true,
   spaceBetween: 30,
   autoplay: {
-    delay: 5000,
+    delay: 2500,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+//SLIDER FACILITES
+var swiper2 = new Swiper(".slider__facilities", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
 

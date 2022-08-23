@@ -128,10 +128,26 @@
         </div>
         <div class="slider__images swiper">
           <div class="slider__wraper swiper-wrapper">
-            <img src="./img/slide1.jpg" class="slider__item swiper-slide" />
-            <img src="./img/slide2.jpg" class="slider__item swiper-slide" />
-            <img src="./img/slide3.jpg" class="slider__item swiper-slide" />
-            <img src="./img/slide4.jpg" class="slider__item swiper-slide" />
+            <img
+              src="./img/slide1.jpg"
+              alt="hotel_room"
+              class="slider__item swiper-slide"
+            />
+            <img
+              src="./img/slide2.jpg"
+              alt="hotel_room"
+              class="slider__item swiper-slide"
+            />
+            <img
+              src="./img/slide3.jpg"
+              alt="hotel_room"
+              class="slider__item swiper-slide"
+            />
+            <img
+              src="./img/slide4.jpg"
+              alt="hotel_room"
+              class="slider__item swiper-slide"
+            />
           </div>
           <div class="slider__button swiper-button-prev"></div>
           <div class="slider__button swiper-button-next"></div>
@@ -170,30 +186,94 @@
           <button class="video__button">BOOK NOW</button>
         </div>
       </div>
-      <!-- <div class="facilities">
+      <div class="facilities">
         <h5>FACILITIES</h5>
         <h1>Core Features</h1>
-        <div class="facilities__slider">
-          <img
-            src="img/iconos_svg/rating.svg"
-            alt="rating_icon"
-            class="facilities__sliderIcon"
-          />
-          <div class="facilities__sliderTitle">Have High Rating</div>
-          <div class="facilities__sliderText">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna..
+        <div class="slider__facilities swiper" id="slider">
+          <div class="swiper-wrapper">
+            <div class="slider__facilities-item swiper-slide">
+              <div class="slider__facilities-number">01</div>
+              <img
+                src="./img/rating.png"
+                alt="rating-icon"
+                class="slider__facilities-img"
+              />
+              <h1 class="slider__facilities-title">Have High Rating</h1>
+              <p class="slider__facilities-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="slider__facilities-item swiper-slide">
+              <div class="slider__facilities-number">02</div>
+              <img
+                src="./img/clock.png"
+                alt="clock-icon"
+                class="slider__facilities-img"
+              />
+              <h1 class="slider__facilities-title">Quiet Hours</h1>
+              <p class="slider__facilities-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="slider__facilities-item swiper-slide">
+              <div class="slider__facilities-number">03</div>
+              <img
+                src="./img/location.png"
+                alt="location-icon"
+                class="slider__facilities-img"
+              />
+              <h1 class="slider__facilities-title">Best Locations</h1>
+              <p class="slider__facilities-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="slider__facilities-item swiper-slide">
+              <div class="slider__facilities-number">04</div>
+              <img
+                src="./img/cancellation.png"
+                alt="cancellation-icon"
+                class="slider__facilities-img"
+              />
+              <h1 class="slider__facilities-title">Free Cancellation</h1>
+              <p class="slider__facilities-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="slider__facilities-item swiper-slide">
+              <div class="slider__facilities-number">05</div>
+              <img
+                src="./img/payment.png"
+                alt="payment-icon"
+                class="slider__facilities-img"
+              />
+              <h1 class="slider__facilities-title">Payment Options</h1>
+              <p class="slider__facilities-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="slider__facilities-item swiper-slide">
+              <div class="slider__facilities-number">06</div>
+              <img
+                src="./img/offers.png"
+                alt="medal-icon"
+                class="slider__facilities-img"
+              />
+              <h1 class="slider__facilities-title">Special Offers</h1>
+              <p class="slider__facilities-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
           </div>
-          <div class="facilities__sliderButtons">
-            <img src="img/iconos_svg/buttonSliderActive.svg" />
-            <img src="img/iconos_svg/buttonSlider.svg" />
-            <img src="img/iconos_svg/buttonSlider.svg" />
-            <img src="img/iconos_svg/buttonSlider.svg" />
-            <img src="img/iconos_svg/buttonSlider.svg" />
-            <img src="img/iconos_svg/buttonSlider.svg" />
-          </div>
+          <div class="slider__pagination swiper-pagination"></div>
         </div>
-      </div>
+    
+      <!-- 
       <div class="foods">
         <div class="foods__icon"></div>
         <h5>MENU</h5>
