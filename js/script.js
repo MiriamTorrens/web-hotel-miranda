@@ -31,19 +31,32 @@ const swiper = new Swiper(".slider__images", {
 });
 
 //SLIDER FACILITES
-var swiper2 = new Swiper(".slider__facilities", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+const initSwiper = function () {
+  const swiper2 = new Swiper(".slider__facilities", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+};
+const mql = window.matchMedia("(max-width: 900px)");
+if (innerWidth < 900) {
+  initSwiper();
+}
+mql.onchange = (e) => {
+  if (e.matches) {
+    initSwiper();
+  } else {
+    location.reload();
+  }
+};
 
 const form = document.getElementById("form");
 form.addEventListener("submit", function (event) {
