@@ -666,8 +666,8 @@ body {
   margin-top: 24px;
 }
 .slider__item {
-  max-width: 770px;
-  max-height: 500px;
+  max-width: 700px;
+  max-height: 400px;
 }
 .slider__button {
   width: 32px;
