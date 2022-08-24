@@ -6,6 +6,10 @@
         padding: 30px 20px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__text{
+        max-width: 400px;
     }
     & h5{
         color: #BDAC8D;
@@ -29,7 +33,10 @@
         color: #C2C2C2;
     }
     &__media{
+        margin-top: 30px;
         width: 100%;
+        max-width: 400px;
+        height: auto;
     }
     & button {
         width: 200px;
@@ -41,7 +48,22 @@
         line-height: 15px;
         letter-spacing: 2.8px;
         color: #FFFFFF;
-        margin-top: 24px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 50px;
     }
-    
+
+    @media only screen and (min-width: 900px) {
+        background: linear-gradient(to right, #222222 0%, #222222 70%, #BDAC8D 70%, #BDAC8D 100%);
+        &__container{
+            gap: 50px;
+            justify-content: center;
+        }
+        &__text{
+            width: 35%;
+        }
+        &__media{
+            width: 40%;
+        }
+    }
 }

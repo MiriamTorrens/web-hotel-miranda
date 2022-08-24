@@ -692,6 +692,10 @@ body {
   padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.video__text {
+  max-width: 400px;
 }
 .video h5 {
   color: #BDAC8D;
@@ -715,7 +719,10 @@ body {
   color: #C2C2C2;
 }
 .video__media {
+  margin-top: 30px;
   width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 .video button {
   width: 200px;
@@ -727,7 +734,24 @@ body {
   line-height: 15px;
   letter-spacing: 2.8px;
   color: #FFFFFF;
-  margin-top: 24px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+@media only screen and (min-width: 900px) {
+  .video {
+    background: linear-gradient(to right, #222222 0%, #222222 70%, #BDAC8D 70%, #BDAC8D 100%);
+  }
+  .video__container {
+    gap: 50px;
+    justify-content: center;
+  }
+  .video__text {
+    width: 35%;
+  }
+  .video__media {
+    width: 40%;
+  }
 }
 
 .facilities {
@@ -748,6 +772,7 @@ body {
   font-weight: 400;
   font-size: 3.2em;
   letter-spacing: -1.2px;
+  text-align: center;
 }
 .facilities .slider__pagination {
   --swiper-theme-color: #BDAC8D;
@@ -788,6 +813,9 @@ body {
   line-height: 24px;
 }
 @media only screen and (min-width: 900px) {
+  .facilities {
+    margin-top: 60px;
+  }
   .facilities .slider__facilities {
     max-width: none;
   }
