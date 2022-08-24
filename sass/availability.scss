@@ -3,20 +3,17 @@
     padding-bottom: 36px;
     background-color: #222222;
     color: #FFFFFF;
-    
     &__form{
-        margin-left: 20px;
-        margin-right: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 100%;
+        text-align: center;
         & label {
             display: inline-block;
             margin-top: 36px;
+            width: 270px;
+            text-align: left;
         }
         .availability__input{
             padding: 5px;
-            width: 100%;
             & input{
                 width: 270px;
                 border: none;
@@ -41,12 +38,12 @@
             font-size: 14px; 
             letter-spacing: 2.8px;    }
         }   
-    @media only screen and (min-width: 600px) {
-        .availability__input {
-            width: 50%;
-        }
-    }
     @media only screen and (min-width: 900px) {
+        &__form {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
         .availability__input {
             width: 30%;
         }
