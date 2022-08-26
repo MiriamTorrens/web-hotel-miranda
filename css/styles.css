@@ -827,4 +827,145 @@ body {
   }
 }
 
+.foods {
+  font-family: "Archivo";
+  font-size: 14px;
+}
+.foods__donut {
+  text-align: right;
+}
+.foods__container {
+  padding: 30px 20px;
+  width: 100%;
+  margin: auto;
+}
+.foods h5 {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 2.8px;
+  color: #777777;
+}
+.foods h1 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 3.5em;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.foods__pagination-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+.foods__pagination-button {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  --swiper-navigation-size: 10px;
+  background-color: #BDAC8D;
+  color: #fff;
+  right: 0;
+  left: 0;
+}
+.foods__item {
+  display: flex;
+  gap: 20px;
+  margin: 15px auto;
+  max-width: 400px;
+}
+.foods__item-img {
+  width: 110px;
+  height: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.foods__item-txt {
+  width: 60%;
+}
+.foods__item-txt h1 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 20px;
+  letter-spacing: -0.72px;
+  color: #222222;
+}
+.foods__item-txt p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 20px;
+  color: #222222;
+}
+.foods__item .eggs {
+  background-image: url("../img/eggs.jpg");
+}
+.foods__item .tea {
+  background-image: url("../img/tea.jpg");
+}
+.foods__item .chia {
+  background-image: url("../img/chia-oatmeal.jpg");
+}
+.foods__item .fruit {
+  background-image: url("../img/fruit.jpg");
+}
+.foods__item .marmalade {
+  background-image: url("../img/marmalade.jpg");
+}
+.foods__item .cheese {
+  background-image: url("../img/cheese.jpg");
+}
+.foods__slider {
+  width: 80%;
+  max-width: 400px;
+}
+.foods__slider-slide {
+  height: auto;
+  max-height: 300px;
+}
+.foods__slider-pagination {
+  position: relative;
+  margin-top: 24px;
+  --swiper-theme-color: #BDAC8D;
+}
+@media only screen and (min-width: 800px) {
+  .foods__donut {
+    text-align: left;
+  }
+  .foods__donut img {
+    transform: rotate(180deg);
+  }
+  .foods__pagination-wraper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .foods__pagination-slide {
+    width: 50%;
+  }
+  .foods__pagination-button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .foods__slider {
+    max-width: none;
+    width: 90%;
+  }
+  .foods__slider-wraper {
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .foods__slider-slide {
+    width: 33%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

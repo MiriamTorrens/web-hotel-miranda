@@ -31,7 +31,7 @@ const swiper = new Swiper(".slider__images", {
 });
 
 //SLIDER FACILITES
-const initSwiper = function () {
+const initSwiperFacilities = function () {
   const swiper2 = new Swiper(".slider__facilities", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -46,13 +46,55 @@ const initSwiper = function () {
     },
   });
 };
-const mql = window.matchMedia("(max-width: 900px)");
+
+//SLIDER FOODS
+const initSwiperFoods = function () {
+  const swiper3 = new Swiper(".foods__slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+};
+
+//PAGINATION FOODS
+const initPaginationFoods = function () {
+  const pagination = new Swiper(".foods__pagination", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+};
+
+//INIT SWIPERS
+const mql = window.matchMedia("(max-width: 899px)");
+const mql2 = window.matchMedia("(max-width: 799px)");
 if (innerWidth < 900) {
-  initSwiper();
+  initSwiperFacilities();
+  initSwiperFoods();
+}
+if (innerWidth < 800) {
+  initPaginationFoods();
 }
 mql.onchange = (e) => {
   if (e.matches) {
-    initSwiper();
+    initSwiperFacilities();
+    initSwiperFoods();
+  } else {
+    location.reload();
+  }
+};
+mql2.onchange = (e) => {
+  if (e.matches) {
+    initPaginationFoods();
   } else {
     location.reload();
   }

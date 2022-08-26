@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="#" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
@@ -167,14 +167,15 @@
       <div class="video">
         <div class="video__container">
           <div class="video__text">
-          <h5>INTRO VIDEO</h5>
-          <h1>Meet With Our Luxury Place.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat you have to understand this.
-          </p>
+            <h5>INTRO VIDEO</h5>
+            <h1>Meet With Our Luxury Place.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat you have to understand
+              this.
+            </p>
           </div>
           <video
             src="media/Hotel Miranda in Bayahibe Dom. Rep. 4K.mp4"
@@ -192,7 +193,7 @@
       <div class="facilities">
         <h5>FACILITIES</h5>
         <h1>Core Features</h1>
-        <div class="slider__facilities swiper" id="slider">
+        <div class="slider__facilities swiper">
           <div class="swiper-wrapper slider__facilities-wraper">
             <div class="slider__facilities-item swiper-slide">
               <div class="slider__facilities-number">01</div>
@@ -275,53 +276,106 @@
           </div>
           <div class="slider__pagination swiper-pagination"></div>
         </div>
-    
-      <!-- 
+      </div>
       <div class="foods">
-        <div class="foods__icon"></div>
-        <h5>MENU</h5>
-        <h1>Our Foods Menu</h1>
-        <div class="foods__images">
-          <div class="foods__image foods__eggs" alt="eggs&bacon"></div>
-          <div class="foods__text">
-            <div class="foods__name">Eggs & Bacon</div>
-            <div class="foods__description">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-              eiusmod tempor.
+        <div class="foods__donut">
+          <img src="./img/icon_food.png" alt="icon-donut" />
+        </div>
+        <div class="foods__container">
+          <h5>MENU</h5>
+          <h1>Our Foods Menu</h1>
+          <div class="foods__pagination swiper">
+            <div class="foods__pagination-wraper swiper-wrapper">
+              <div class="foods__pagination-slide swiper-slide">
+                <div class="foods__item">
+                  <div class="foods__item-img eggs"></div>
+                  <div class="foods__item-txt">
+                    <h1>Eggs & Bacon</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                <div class="foods__item">
+                  <div class="foods__item-img tea"></div>
+                  <div class="foods__item-txt">
+                    <h1>Tea or Coffe</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                <div class="foods__item">
+                  <div class="foods__item-img chia"></div>
+                  <div class="foods__item-txt">
+                    <h1>Chia Oatmeal</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="foods__pagination-slide swiper-slide">
+                <div class="foods__item">
+                  <div class="foods__item-img fruit"></div>
+                  <div class="foods__item-txt">
+                    <h1>Fruit Parfait</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                <div class="foods__item">
+                  <div class="foods__item-img marmalade"></div>
+                  <div class="foods__item-txt">
+                    <h1>Marmalade Selection</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+                <div class="foods__item">
+                  <div class="foods__item-img cheese"></div>
+                  <div class="foods__item-txt">
+                    <h1>Cheese Plate</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adip isicing elit,
+                      sed do eiusmod tempor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foods__pagination-buttons">
+              <div class="foods__pagination-button swiper-button-prev"></div>
+              <div class="foods__pagination-button swiper-button-next"></div>
             </div>
           </div>
-        </div>
-        <div class="foods__images">
-          <div class="foods__image foods__tea" alt="tea&coffe"></div>
-          <div class="foods__text">
-            <div class="foods__name">Tea or Coffee</div>
-            <div class="foods__description">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-              eiusmod tempor.
-            </div>
-          </div>
-        </div>
-        <div class="foods__images">
-          <div class="foods__image foods__chia" alt="chia_oatmeal"></div>
-          <div class="foods__text">
-            <div class="foods__name">Chia Oatmeal</div>
-            <div class="foods__description">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-              eiusmod tempor.
-            </div>
-          </div>
-        </div>
-        <div class="foods__buttons">
-          <div class="foods__button"><img src="img/iconos_svg/prev.svg" /></div>
-          <div class="foods__button"><img src="img/iconos_svg/next.svg" /></div>
-        </div>
-        <div class="foods__slider"></div>
-        <div class="foods__sliderButtons">
-          <img src="img/iconos_svg/buttonSlider.svg" />
-          <img src="img/iconos_svg/buttonSliderActive.svg" />
-          <img src="img/iconos_svg/buttonSlider.svg" />
         </div>
       </div>
+      <div class="foods__slider swiper">
+        <div class="foods__slider-wraper swiper-wrapper">
+          <img
+            src="./img/buffet1.jpg"
+            class="foods__slider-slide swiper-slide"
+          />
+          <img
+            src="./img/buffet2.jpg"
+            class="foods__slider-slide swiper-slide"
+          />
+          <img
+            src="./img/buffet3.jpg"
+            class="foods__slider-slide swiper-slide"
+          />
+        </div>
+        <div class="foods__slider-pagination swiper-pagination"></div>
+      </div>
+      <!--
       <div class="projects">
         <div class="projects__project">
           <div class="projects__icon projects__rocket"></div>
