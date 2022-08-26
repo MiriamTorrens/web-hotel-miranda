@@ -11,7 +11,7 @@ body {
   min-width: 320px;
 }
 
-.header {
+header {
   font-family: "Archivo";
   font-size: 16px;
   position: fixed;
@@ -19,32 +19,62 @@ body {
   width: 100%;
   background-color: #fff;
 }
-.header__title {
-  display: none;
-}
-.header a {
+header a {
   text-decoration: none;
   color: #000;
 }
-.header__container {
+
+.title {
+  display: none;
+}
+
+.menu-div {
+  display: none;
+}
+.menu-div-active {
+  display: block;
+  width: 100%;
+  line-height: 2em;
+  padding: 10px;
+}
+.menu-div-active p {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 800px) {
+  header {
+    background-color: #000;
+    height: 60px;
+  }
+  .title {
+    display: block;
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 5px 0;
+  }
+}
+.navbar {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
-.header__container .header__left {
+.navbar__menu {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 20px;
 }
-.header__container .header__burger {
+.navbar__menu-burger {
   width: 20px;
   height: 20px;
 }
-.header__container .header__logo {
+.navbar__menu-logo {
   width: 36px;
   height: 36px;
   box-shadow: 0px 5px 15px rgba(139, 139, 139, 0.25);
@@ -52,62 +82,36 @@ body {
   line-height: 41px;
   margin-left: 40px;
 }
-.header__container .header__text {
+.navbar__menu-text {
   margin-left: 10px;
   font-size: 0.68em;
 }
-.header__container .header__icons-search {
+.navbar__menu-links {
+  display: none;
+}
+.navbar__icons-search {
   margin: 0 20px;
 }
-.header__menu {
-  display: none;
-}
-.header__menu-burger {
-  display: none;
-}
-.header__menu-burger-active {
-  display: block;
-  width: 100%;
-  line-height: 2em;
-  padding: 10px;
-}
-.header__menu-burger-active p {
-  margin-left: 20px;
-  font-weight: 600;
-  font-size: 1em;
-}
 @media only screen and (min-width: 600px) {
-  .header__burger {
-    display: none;
-  }
-  .header__left {
+  .navbar__menu {
     width: 10%;
   }
-  .header__menu {
+  .navbar__menu-burger {
+    display: none;
+  }
+  .navbar__menu-links {
     width: 50%;
     display: flex;
     justify-content: space-around;
   }
 }
 @media only screen and (min-width: 800px) {
-  .header {
-    background-color: #000;
-    height: 60px;
-  }
-  .header__title {
-    width: 80%;
-    margin: auto;
-    display: block;
-    color: #fff;
-    font-size: 0.9em;
-    padding: 5px 0;
-  }
-  .header__container {
+  .navbar {
     width: 80%;
     margin: auto;
     background-color: #fff;
   }
-  .header__icons img {
+  .navbar__icons img {
     border: 2px solid rgba(133, 133, 133, 0.3);
     padding: 6px;
   }
@@ -116,21 +120,23 @@ body {
 .presentation {
   width: 100%;
   background-color: #333333;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 14px;
 }
-.presentation__container {
-  margin-left: 20px;
+.presentation__wraper {
   padding: 75px 0;
+  width: 90%;
+  margin: auto;
 }
-.presentation__container p:first-child {
+.presentation__wraper h2 {
+  margin-top: 20px;
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.9em;
   line-height: 1.5em;
   letter-spacing: 2.8px;
 }
-.presentation__container p {
+.presentation__wraper h1 {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 3.5em;
@@ -138,46 +144,48 @@ body {
   letter-spacing: -1.2px;
   margin-top: 40px;
 }
-.presentation__container button {
-  font-family: "Archivo";
+.presentation__wraper button {
   width: 217px;
   height: 60px;
+  font-family: "Archivo";
   font-weight: 700;
   font-size: 1em;
   letter-spacing: 2.8px;
   border: none;
   color: #FFFFFF;
 }
-.presentation__container .presentation__tour {
-  margin-top: 40px;
+.presentation__wraper .presentation__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+.presentation__wraper .presentation__buttons-tour {
   background-color: #BEAD8E;
 }
-.presentation__container .presentation__learn {
-  margin-top: 24px;
+.presentation__wraper .presentation__buttons-learn {
   background-color: #333333;
   border: 2px solid rgba(255, 255, 255, 0.33);
 }
 @media only screen and (min-width: 450px) {
-  .presentation__container p {
+  .presentation__wraper {
+    width: 75%;
+  }
+  .presentation__wraper h1 {
     font-size: 4em;
   }
-}
-@media only screen and (min-width: 500px) {
-  .presentation .presentation__learn {
-    margin-left: 2%;
+  .presentation__wraper h2 {
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 600px) {
-  .presentation__container p {
+  .presentation__wraper {
+    width: 70%;
+  }
+  .presentation__wraper h1 {
     font-size: 5em;
   }
-}
-@media only screen and (min-width: 800px) {
-  .presentation__container {
-    width: 70%;
-    margin: auto;
-  }
-  .presentation__container p:first-child {
+  .presentation__wraper h2 {
     margin-top: 100px;
   }
 }
