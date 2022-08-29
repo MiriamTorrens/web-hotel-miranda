@@ -48,6 +48,7 @@ header {
     }
 }
 .section{
+    font-family: 'Archivo';
     font-size: 14px;
 }
 .section__title{
@@ -89,3 +90,4 @@ header {
 @import 'video';
 @import 'facilities';
 @import 'foods';
+@import 'projects';

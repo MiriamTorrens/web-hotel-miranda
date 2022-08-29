@@ -51,6 +51,7 @@ header a {
 }
 
 .section {
+  font-family: "Archivo";
   font-size: 14px;
 }
 
@@ -813,10 +814,6 @@ header a {
   }
 }
 
-.foods {
-  font-family: "Archivo";
-  font-size: 14px;
-}
 .foods__donut {
   display: flex;
   justify-content: flex-end;
@@ -827,27 +824,11 @@ header a {
   width: 100px;
   height: 100px;
 }
-.foods__container {
+.foods__wraper {
   padding: 0px 20px 30px;
   width: 100%;
   max-width: 400px;
   margin: auto;
-}
-.foods h5 {
-  padding: 20px 0;
-  font-weight: 700;
-  font-size: 1em;
-  letter-spacing: 2.8px;
-  color: #777777;
-}
-.foods h1 {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 3.5em;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  color: #222222;
-  margin-bottom: 20px;
 }
 .foods__pagination-buttons {
   display: flex;
@@ -861,7 +842,7 @@ header a {
   width: 32px;
   height: 32px;
   --swiper-navigation-size: 10px;
-  background-color: #BDAC8D;
+  background-color: var(--tertiary-color);
   color: #fff;
   right: 0;
   left: 0;
@@ -881,6 +862,7 @@ header a {
 }
 .foods__item-txt {
   width: 60%;
+  color: var(--primary-color);
 }
 .foods__item-txt h1 {
   font-family: "Old Standard TT";
@@ -888,14 +870,12 @@ header a {
   font-size: 1.5em;
   line-height: 20px;
   letter-spacing: -0.72px;
-  color: #222222;
 }
 .foods__item-txt p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 0.8em;
   line-height: 20px;
-  color: #222222;
 }
 .foods__item .eggs {
   background-image: url("../img/eggs.jpg");
@@ -926,10 +906,10 @@ header a {
 .foods__slider-pagination {
   position: relative;
   margin-top: 24px;
-  --swiper-theme-color: #BDAC8D;
+  --swiper-theme-color: var(--tertiary-color);
 }
 @media only screen and (min-width: 800px) {
-  .foods__container {
+  .foods__wraper {
     max-width: 800px;
   }
   .foods__pagination-wraper {
@@ -966,6 +946,39 @@ header a {
   .foods h5 {
     margin-top: -50px;
   }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  background-color: var(--primary-color);
+  font-family: "Roboto";
+  padding: 30px 10px;
+  margin-top: 20px;
+}
+.projects__item {
+  text-align: center;
+  padding: 10px;
+}
+.projects__item h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff;
+}
+.projects__item h2 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+}
+.projects__item img {
+  width: 50px;
+}
+.projects__plus {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,4 @@
 .foods{
-    font-family: 'Archivo';
-    font-size: 14px;
     &__donut{
         display: flex;
         justify-content: flex-end;
@@ -11,27 +9,11 @@
             height: 100px;
         }
     }
-    &__container{
+    &__wraper{
         padding: 0px 20px 30px;
         width: 100%;
         max-width: 400px;
         margin: auto;
-    }
-    & h5{
-        padding: 20px 0;
-        font-weight: 700;
-        font-size:1em;
-        letter-spacing: 2.8px;
-        color: #777777;
-    }
-    & h1{
-        font-family: 'Old Standard TT';
-        font-weight: 400;
-        font-size: 3.5em;
-        line-height: 60px;
-        letter-spacing: -1.2px;
-        color: #222222;
-        margin-bottom: 20px;
     }
     &__pagination{
         &-buttons {
@@ -46,7 +28,7 @@
             width: 32px;
             height: 32px;
             --swiper-navigation-size: 10px;
-            background-color: #BDAC8D;
+            background-color: var(--tertiary-color);
             color: #fff;
             right: 0;
             left: 0;
@@ -66,20 +48,19 @@
         }
         &-txt{
             width: 60%;
+            color: var(--primary-color);
             & h1{
                 font-family: 'Old Standard TT';
                 font-weight: 400;
                 font-size: 1.5em;
                 line-height: 20px;
-                letter-spacing: -0.72px;
-                color: #222222;
+                letter-spacing: -0.72px;  
             }
             & p {
                 font-family: 'Roboto';
                 font-weight: 400;
                 font-size: 0.8em;
                 line-height: 20px;
-                color: #222222;
             }
         }
         .eggs{
@@ -112,10 +93,10 @@
     &__slider-pagination {
         position: relative;
         margin-top: 24px;
-        --swiper-theme-color: #BDAC8D;
+        --swiper-theme-color: var(--tertiary-color);
     }
     @media only screen and (min-width: 800px) {
-        &__container {
+        &__wraper {
             max-width: 800px;
         }
         &__pagination {
