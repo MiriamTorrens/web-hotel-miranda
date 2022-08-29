@@ -14,7 +14,7 @@ menuIcon.addEventListener("click", () => {
 });
 
 //SLIDER ROOMS
-const swiper = new Swiper(".slider__images", {
+const swiper = new Swiper(".rooms__slider", {
   direction: "horizontal",
   loop: true,
   slidesPerView: "auto",
@@ -31,7 +31,7 @@ const swiper = new Swiper(".slider__images", {
 
 //SLIDER FACILITES
 const initSwiperFacilities = function () {
-  const swiper2 = new Swiper(".slider__facilities", {
+  const swiper2 = new Swiper(".facilities__slider", {
     slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,

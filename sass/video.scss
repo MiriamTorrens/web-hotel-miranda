@@ -1,8 +1,6 @@
 .video{
-    background: #222222;
-    font-size: 14px;
-    font-family: 'Archivo';
-    &__container{
+    background: var(--primary-color);
+    &__wraper{
         padding: 30px 20px;
         display: flex;
         flex-wrap: wrap;
@@ -10,28 +8,20 @@
     }
     &__text{
         max-width: 400px;
+        & h5 {
+            color: var(--tertiary-color);
+        }
+        & h1 {
+            color: #fff;
+        }
+        & p {
+            font-weight: 400;
+            font-size: 0.85em;
+            line-height: 24px;
+            color: #C2C2C2;
+        }
     }
-    & h5{
-        color: #BDAC8D;
-        font-size: 1em;
-        font-weight: 700;
-        letter-spacing: 2.8px;
-    }
-    & h1{
-        padding: 20px 0;
-        font-family: 'Old Standard TT';
-        color: #fff;
-        font-weight: 400;
-        font-size: 3.5em;
-        line-height: 60px;
-        letter-spacing: -1.2px;
-    }
-    & p{
-        font-weight: 400;
-        font-size:0.85em;
-        line-height: 24px;
-        color: #C2C2C2;
-    }
+    
     &__media{
         margin-top: 30px;
         width: 100%;
@@ -42,20 +32,18 @@
         width: 200px;
         height: 50px;
         border: none;
-        background-color: #BDAC8D;
+        background-color: var(--tertiary-color);
         font-weight: 700;
         font-size: 1em;
-        line-height: 15px;
         letter-spacing: 2.8px;
-        color: #FFFFFF;
+        color: #fff;
         margin-left: 50%;
         transform: translateX(-50%);
         margin-bottom: 50px;
     }
-
     @media only screen and (min-width: 900px) {
-        background: linear-gradient(to right, #222222 0%, #222222 70%, #BDAC8D 70%, #BDAC8D 100%);
-        &__container{
+        background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 70%, var(--tertiary-color) 70%, var(--tertiary-color) 100%);
+        &__wraper{
             gap: 50px;
             justify-content: center;
         }

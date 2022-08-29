@@ -85,21 +85,10 @@
           />
         </form>
       </div>
-      <div class="discover">
-        <div class="discover__text">
-          <p>ABOUT US</p>
-          <h1>Discover Our Underground.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <button class="discover__button">BOOK NOW</button>
-        </div>
+      <div class="discover section">
         <div class="discover__images">
-          <div class="discover__image discover__image1"></div>
-          <div class="discover__image discover__team">
+          <div class="discover__images-item discover__image1"></div>
+          <div class="discover__images-item discover__team">
             <img src="./img/iconos_svg/team.svg" />
             <h1>Strong Team</h1>
             <p>
@@ -107,8 +96,8 @@
               eiusmod tempor.
             </p>
           </div>
-          <div class="discover__image discover__image2"></div>
-          <div class="discover__image discover__luxury">
+          <div class="discover__images-item discover__image2"></div>
+          <div class="discover__images-item discover__luxury">
             <img src="img/iconos_svg/calendar.svg" alt="calendar_icon" />
             <h1>Luxury Room</h1>
             <p>
@@ -117,11 +106,26 @@
             </p>
           </div>
         </div>
+        <div class="discover__text">
+          <div class="discover__text-wraper">
+            <h5 class="discover__title section__title">ABOUT US</h5>
+            <h1 class="discover__headline section__headline">
+              Discover Our Underground.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="discover__button">BOOK NOW</button>
+          </div>
+        </div>
       </div>
-      <div class="slider">
-        <h5>ROOMS</h5>
-        <h1>Hand Picked Rooms</h1>
-        <div class="slider__icons">
+      <div class="rooms section">
+        <h5 class="rooms__title section__title">ROOMS</h5>
+        <h1 class="rooms__headline section__headline">Hand Picked Rooms</h1>
+        <div class="rooms__icons">
           <img src="img/iconos_svg/bed.svg" alt="bed_icon" />
           <img src="img/iconos_svg/wifi.svg" alt="wifi_icon" />
           <img src="img/iconos_svg/car.svg" alt="car_icon" />
@@ -130,31 +134,31 @@
           <img src="img/iconos_svg/smoke.svg" alt="smoke_icon" />
           <img src="img/iconos_svg/bar.svg" alt="bar_icon" />
         </div>
-        <div class="slider__images swiper">
-          <div class="slider__wraper swiper-wrapper">
+        <div class="rooms__slider swiper">
+          <div class="rooms__slider-wraper swiper-wrapper">
             <img
               src="./img/slide1.jpg"
               alt="hotel_room"
-              class="slider__item swiper-slide"
+              class="rooms__slider-slide swiper-slide"
             />
             <img
               src="./img/slide2.jpg"
               alt="hotel_room"
-              class="slider__item swiper-slide"
+              class="rooms__slider-slide swiper-slide"
             />
             <img
               src="./img/slide3.jpg"
               alt="hotel_room"
-              class="slider__item swiper-slide"
+              class="rooms__slider-slide swiper-slide"
             />
             <img
               src="./img/slide4.jpg"
               alt="hotel_room"
-              class="slider__item swiper-slide"
+              class="rooms__slider-slide swiper-slide"
             />
           </div>
-          <div class="slider__button swiper-button-prev"></div>
-          <div class="slider__button swiper-button-next"></div>
+          <div class="rooms__button swiper-button-prev"></div>
+          <div class="rooms__button swiper-button-next"></div>
         </div>
         <!-- <div class="slider__text">
           <h1>Minimal Duplex Room</h1>
@@ -167,11 +171,13 @@
           </p>
         </div> -->
       </div>
-      <div class="video">
-        <div class="video__container">
+      <div class="video section">
+        <div class="video__wraper">
           <div class="video__text">
-            <h5>INTRO VIDEO</h5>
-            <h1>Meet With Our Luxury Place.</h1>
+            <h5 class="video__title section__title">INTRO VIDEO</h5>
+            <h1 class="video__headline section__headline">
+              Meet With Our Luxury Place.
+            </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -193,91 +199,91 @@
         </div>
         <button class="video__button">BOOK NOW</button>
       </div>
-      <div class="facilities">
-        <h5>FACILITIES</h5>
-        <h1>Core Features</h1>
-        <div class="slider__facilities swiper">
-          <div class="swiper-wrapper slider__facilities-wraper">
-            <div class="slider__facilities-item swiper-slide">
-              <div class="slider__facilities-number">01</div>
+      <div class="facilities section">
+        <h5 class="facilities__title section__title">FACILITIES</h5>
+        <h1 class="facilities__headline section__headline">Core Features</h1>
+        <div class="facilities__slider swiper">
+          <div class="facilities__slider-wraper swiper-wrapper">
+            <div class="facilities__slider-slide swiper-slide">
+              <div class="facilities__slider-number">01</div>
               <img
                 src="./img/rating.png"
                 alt="rating-icon"
-                class="slider__facilities-img"
+                class="facilities__slider-img"
               />
-              <h1 class="slider__facilities-title">Have High Rating</h1>
-              <p class="slider__facilities-text">
+              <h1 class="facilities__slider-title">Have High Rating</h1>
+              <p class="facilities__slider-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna..
               </p>
             </div>
-            <div class="slider__facilities-item swiper-slide">
-              <div class="slider__facilities-number">02</div>
+            <div class="facilities__slider-slide swiper-slide">
+              <div class="facilities__slider-number">02</div>
               <img
                 src="./img/clock.png"
                 alt="clock-icon"
-                class="slider__facilities-img"
+                class="facilities__slider-img"
               />
-              <h1 class="slider__facilities-title">Quiet Hours</h1>
-              <p class="slider__facilities-text">
+              <h1 class="facilities__slider-title">Quiet Hours</h1>
+              <p class="facilities__slider-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna..
               </p>
             </div>
-            <div class="slider__facilities-item swiper-slide">
-              <div class="slider__facilities-number">03</div>
+            <div class="facilities__slider-slide swiper-slide">
+              <div class="facilities__slider-number">03</div>
               <img
                 src="./img/location.png"
                 alt="location-icon"
-                class="slider__facilities-img"
+                class="facilities__slider-img"
               />
-              <h1 class="slider__facilities-title">Best Locations</h1>
-              <p class="slider__facilities-text">
+              <h1 class="facilities__slider-title">Best Locations</h1>
+              <p class="facilities__slider-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna..
               </p>
             </div>
-            <div class="slider__facilities-item swiper-slide">
-              <div class="slider__facilities-number">04</div>
+            <div class="facilities__slider-slide swiper-slide">
+              <div class="facilities__slider-number">04</div>
               <img
                 src="./img/cancellation.png"
                 alt="cancellation-icon"
-                class="slider__facilities-img"
+                class="facilities__slider-img"
               />
-              <h1 class="slider__facilities-title">Free Cancellation</h1>
-              <p class="slider__facilities-text">
+              <h1 class="facilities__slider-title">Free Cancellation</h1>
+              <p class="facilities__slider-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna..
               </p>
             </div>
-            <div class="slider__facilities-item swiper-slide">
-              <div class="slider__facilities-number">05</div>
+            <div class="facilities__slider-slide swiper-slide">
+              <div class="facilities__slider-number">05</div>
               <img
                 src="./img/payment.png"
                 alt="payment-icon"
-                class="slider__facilities-img"
+                class="facilities__slider-img"
               />
-              <h1 class="slider__facilities-title">Payment Options</h1>
-              <p class="slider__facilities-text">
+              <h1 class="facilities__slider-title">Payment Options</h1>
+              <p class="facilities__slider-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna..
               </p>
             </div>
-            <div class="slider__facilities-item swiper-slide">
-              <div class="slider__facilities-number">06</div>
+            <div class="facilities__slider-slide swiper-slide">
+              <div class="facilities__slider-number">06</div>
               <img
                 src="./img/offers.png"
                 alt="medal-icon"
-                class="slider__facilities-img"
+                class="facilities__slider-img"
               />
-              <h1 class="slider__facilities-title">Special Offers</h1>
-              <p class="slider__facilities-text">
+              <h1 class="facilities__slider-title">Special Offers</h1>
+              <p class="facilities__slider-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna..
               </p>
             </div>
           </div>
-          <div class="slider__pagination swiper-pagination"></div>
+          <div class="facilities__slider-pagination swiper-pagination"></div>
         </div>
       </div>
       <div class="foods">

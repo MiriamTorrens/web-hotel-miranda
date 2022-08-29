@@ -1,39 +1,33 @@
 .availability {
     font-family: 'Roboto';
     padding-bottom: 36px;
-    background-color: #222222;
-    color: #FFFFFF;
-
+    background-color: var(--primary-color);
+    color: #fff;
     &__form {
         width: 100%;
         text-align: center;
-
         & label {
             display: inline-block;
             margin-top: 36px;
             width: 270px;
             text-align: left;
         }
-
         .availability__input {
             padding: 5px;
-
             & input {
                 width: 270px;
                 border: none;
-                color: #BEAD8E;
-                background-color: #222222;
-                border-bottom: 2px solid #BEAD8E;
+                color: var(--tertiary-color);
+                background-color: var(--primary-color);
+                border-bottom: 2px solid var(--tertiary-color);
                 padding: 14px;
-
                 &[type="date"]::-webkit-calendar-picker-indicator {
                     filter: invert(1);
                 }
             }
         }
-
         .availability__submit {
-            background-color: #BEAD8E;
+            background-color: var(--tertiary-color);
             border: none;
             color: #fff;
             width: 240px;
@@ -45,14 +39,12 @@
             letter-spacing: 2.8px;
         }
     }
-
     @media only screen and (min-width: 900px) {
         &__form {
             display: flex;
             gap: 30px;
             justify-content: center;
         }
-
         .availability__input {
             width: 30%;
         }

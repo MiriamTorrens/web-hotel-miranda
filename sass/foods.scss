@@ -2,11 +2,19 @@
     font-family: 'Archivo';
     font-size: 14px;
     &__donut{
-        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        & img{
+            margin-right: -25px;
+            width: 100px;
+            height: 100px;
+        }
     }
     &__container{
-        padding: 30px 20px;
+        padding: 0px 20px 30px;
         width: 100%;
+        max-width: 400px;
         margin: auto;
     }
     & h5{
@@ -107,11 +115,8 @@
         --swiper-theme-color: #BDAC8D;
     }
     @media only screen and (min-width: 800px) {
-        &__donut {
-                text-align: left;
-            & img {
-                transform: rotate(180deg);
-            }
+        &__container {
+            max-width: 800px;
         }
         &__pagination {
             &-wraper {
@@ -139,6 +144,15 @@
             &-slide{
                 width: 33%;
             }
+        }
+    }
+    @media only screen and (min-width: 1090px) {
+        &__donut {
+            justify-content: flex-start;
+            margin-left: 30px;
+        }
+        & h5{
+            margin-top: -50px;
         }
     }
 

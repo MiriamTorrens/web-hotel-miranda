@@ -1,29 +1,13 @@
 .facilities{
-    font-family: 'Archivo';
-    font-size: 14px;
-    padding: 30px 20px;
-    & h5 {
-        color: #777777;
+    padding: 10% 20px;
+    text-align: center;
+    .facilities__slider{
+        font-family: 'Archivo';
+        text-align: left;
         font-size: 1em;
-        font-weight: 700;
-        letter-spacing: 2.8px;
-        text-align: center;
-    }
-    & h1 {
-        padding: 15px 0;
-        font-family: 'Old Standard TT';
-        font-weight: 400;
-        font-size: 3.2em;
-        letter-spacing: -1.2px;
-        text-align: center;
-    }
-    .slider__pagination{
-        --swiper-theme-color: #BDAC8D;
-    }
-    .slider__facilities{
-        width: 100%;
         max-width: 250px;
-        &-item{
+        margin-top: 30px;
+        &-slide{
             width: 100%;
             height: 300px;
             margin: auto;
@@ -47,24 +31,27 @@
             font-weight: 400;
             font-size: 2em;
             line-height: 30px;
+            padding: 20px 0;
         }
         &-text{
-            color: #777777;
+            color: var(--title-color);
             font-size: 1em;
             font-weight: 400;
             line-height: 24px;
         }
+        &-pagination{
+            --swiper-theme-color: var(--tertiary-color);
+        }
     }
     @media only screen and (min-width: 900px) {
-        margin-top: 60px;
-        .slider__facilities{
+        .facilities__slider{
             max-width: none;
             &-wraper{
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(2, 1fr);
             }
-            &-item{
+            &-slide{
                 max-width: 250px;
             }
         }
