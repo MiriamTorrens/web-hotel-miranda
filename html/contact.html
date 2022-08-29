@@ -45,95 +45,80 @@
       <div class="menu-div" id="menu-div"></div>
     </header>
     <main>
-      <div class="contactPage">
-        <div class="contactPage__presentation">
-          <h5>THE ULTIMATE LUXURY</h5>
+      <div class="presentation">
+        <div class="presentation__wraper">
+          <h2>THE ULTIMATE LUXURY</h2>
           <h1>New Details</h1>
         </div>
-        <div class="contactPage__hotel">
-          <div class="contactPage__data">
-            <img src="../img/map.png" />
-            <div class="contactPage__hotelText">
-              <h1>Hotel Adress</h1>
-              <span class="contactPage__subtitle"
-                >19/A, Cirikon City hall Tower New York, NYC</span
-              >
-            </div>
-          </div>
-          <!-- <div class="contactPage__hotelNumber">01</div> -->
-          <div class="contactPage__data">
-            <img src="../img/phone.png" />
-            <div class="contactPage__hotelText">
-              <h1>Phone Number</h1>
-              <span class="contactPage__subtitle"
-                >+ 97656 8675 7864 7 <br />
-                + 876 766 8675 765 6</span
-              >
-            </div>
-          </div>
-          <!-- <div class="contactPage__hotelNumber">02</div> -->
-          <div class="contactPage__data">
-            <img src="../img/email.png" />
-            <div class="contactPage__hotelText">
-              <h1>Email</h1>
-              <span class="contactPage__subtitle"
-                >info@webmail.com jobs.webmail@mail.com</span
-              >
-            </div>
-          </div>
-          <!-- <div class="contactPage__hotelNumber">03</div> -->
+      </div>
+      <div class="contact">
+        <div class="contact__item">
+          <img src="../img/map.png" />
+          <h1>Hotel Adress</h1>
+          <p>19/A, Cirikon City hall Tower New York, NYC</p>
         </div>
-        <div class="contactPage__map" id="map"></div>
-
-        <div class="contactPage__buttons">
-          <button class="contactPage__location" id="location">
-            Current Location
-          </button>
-          <button class="contactPage__nearest" id="nearest">
-            Find my nearest location
-          </button>
+        <div class="contact__item">
+          <img src="../img/phone.png" />
+          <h1>Phone Number</h1>
+          <p>+ 97656 8675 7864 7 <br />+ 876 766 8675 765 6</p>
+        </div>
+        <div class="contact__item">
+          <img src="../img/email.png" />
+          <h1>Email</h1>
+          <p>info@webmail.com jobs.webmail@mail.com</p>
+        </div>
+      </div>
+      <div class="map">
+        <div class="map__wraper" id="map"></div>
+        <div class="map__buttons">
+          <button class="map__location" id="location">Current Location</button>
           <input
             type="text"
             placeholder="Enter your address"
-            class="contactPage__direction"
+            class="map__direction"
             id="inputAddress"
           />
+          <button class="map__nearest" id="nearest">
+            Find my nearest location
+          </button>
           <button id="searchLocation">Search</button>
-          <select class="contactPage__select" id="select"></select>
+          <select class="map__select" id="select"></select>
         </div>
-        <div class="contactPage__results">
+        <div class="map__results">
           <ul id="results"></ul>
         </div>
-        <form>
-          <div class="contactPage__inputs">
+      </div>
+      <!--
+        <form class="contact__form">
+          <div class="contact__inputs">
             <input
               type="text"
               placeholder="Your full name"
-              class="contactPage__input"
+              class="contact__input"
             /><br />
             <input
               type="text"
               placeholder="Add phone number"
-              class="contactPage__input"
+              class="contact__input"
             /><br />
             <input
               type="text"
               placeholder="Enter email address"
-              class="contactPage__input"
+              class="contact__input"
             /><br />
             <input
               type="text"
               placeholder="Enter subject"
-              class="contactPage__input"
+              class="contact__input"
             /><br />
           </div>
           <textarea
-            class="contactPage__input contactPage__textarea"
+            class="contact__input contact__textarea"
             placeholder="Enter message"
           ></textarea>
-          <input type="submit" value="SEND" class="contactPage__button" />
+          <input type="submit" value="SEND" class="contact__button" />
         </form>
-      </div>
+      </div> -->
     </main>
     <footer class="footer">
       <div class="footer__container">

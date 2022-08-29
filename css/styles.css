@@ -171,7 +171,7 @@ header a {
   font-size: 3.5em;
   line-height: 1.2em;
   letter-spacing: -1.2px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .presentation__wraper button {
   width: 217px;
@@ -216,181 +216,6 @@ header a {
   }
   .presentation__wraper h2 {
     margin-top: 100px;
-  }
-}
-
-.contactPage {
-  width: 100%;
-}
-.contactPage .contactPage__presentation {
-  height: 265px;
-  background-color: #333333;
-  color: #FFFFFF;
-}
-.contactPage .contactPage__presentation h5 {
-  display: inline-block;
-  margin-top: 75px;
-  margin-left: 20px;
-  font-family: "Archivo";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18px;
-  letter-spacing: 2.8px;
-}
-.contactPage .contactPage__presentation h1 {
-  margin-top: 16px;
-  margin-left: 20px;
-  font-family: "Old Standard TT";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-}
-.contactPage .contactPage__hotel .contactPage__data {
-  height: 189px;
-  width: 100%;
-  display: flex;
-  margin-top: 24px;
-}
-.contactPage .contactPage__hotel .contactPage__data img {
-  width: 40px;
-  height: 40px;
-  margin-left: 32px;
-  margin-top: 47px;
-}
-.contactPage .contactPage__hotel .contactPage__data .contactPage__hotelText {
-  margin-left: 27px;
-  width: 200px;
-}
-.contactPage .contactPage__hotel .contactPage__data .contactPage__hotelText h1 {
-  font-family: "Old Standard TT";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  margin-top: 46.5px;
-  margin-bottom: 20px;
-}
-.contactPage .contactPage__hotel .contactPage__data .contactPage__hotelText .contactPage__subtitle {
-  font-family: "Archivo";
-  font-size: 15px;
-  color: #777777;
-}
-.contactPage .contactPage__hotelNumber {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 200px;
-  line-height: 234px;
-  letter-spacing: -6px;
-  color: #F8F8F8;
-  margin-left: 130px;
-}
-.contactPage .contactPage__map {
-  width: 90%;
-  height: 200px;
-  background: #D4D4D4;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-.contactPage .contactPage__buttons {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-family: "Roboto";
-}
-.contactPage .contactPage__buttons button {
-  background-color: #333333;
-  color: #BEAD8E;
-  border: none;
-  border-radius: 8px;
-  margin-right: 20px;
-  padding: 10px;
-}
-.contactPage .contactPage__buttons input, .contactPage .contactPage__buttons select {
-  border-radius: 8px;
-  padding: 10px;
-  padding-left: 10px;
-  margin-right: 10px;
-}
-.contactPage .contactPage__results {
-  width: 600px;
-  margin: 0 auto;
-  margin-top: 20px;
-  font-family: "Roboto";
-}
-.contactPage form {
-  text-align: center;
-  margin-top: 44px;
-  width: 90%;
-  margin: 0 auto;
-}
-.contactPage form .contactPage__inputs {
-  width: 100%;
-}
-.contactPage form .contactPage__inputs .contactPage__input {
-  width: 100%;
-  height: 67px;
-  background-color: #F8F8F8;
-  border: none;
-  margin-top: 16px;
-  padding-left: 20px;
-}
-.contactPage form .contactPage__textarea {
-  width: 100%;
-  height: 175px;
-  border: none;
-  background-color: #F8F8F8;
-  margin-top: 16px;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-.contactPage form .contactPage__button {
-  width: 258px;
-  height: 60px;
-  background: #BEAD8E;
-  color: #FFFFFF;
-  border: none;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 3.2px;
-  margin-top: 36px;
-}
-@media only screen and (min-width: 1000px) {
-  .contactPage .contactPage__presentation h5, .contactPage .contactPage__presentation h1 {
-    margin-left: 150px;
-  }
-  .contactPage .contactPage__hotel {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 110px;
-  }
-  .contactPage .contactPage__map {
-    width: 80%;
-    height: 700px;
-  }
-  .contactPage form {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 130px;
-  }
-  .contactPage form .contactPage__inputs {
-    column-count: 2;
-    column-gap: 19px;
-    column-fill: auto;
-    width: 100%;
-  }
-  .contactPage form .contactPage__textarea {
-    height: 250px;
   }
 }
 
@@ -979,6 +804,72 @@ header a {
 }
 .projects__plus {
   font-size: 12px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+}
+.contact__item {
+  margin-top: 40px;
+  width: 250px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(2, fr);
+  font-family: "Old Standard TT";
+}
+.contact__item img {
+  width: 40px;
+}
+.contact__item h1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--primary-color);
+}
+.contact__item p {
+  grid-column: 2;
+  color: var(--title-color);
+  font-size: 14px;
+}
+
+.map {
+  width: 80%;
+  margin: auto;
+}
+.map__wraper {
+  height: 200px;
+  margin: 40px 0;
+}
+.map__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: "Roboto";
+}
+.map__buttons button {
+  background-color: #333333;
+  color: #BEAD8E;
+  border: none;
+  border-radius: 8px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.map__buttons input, .map__buttons select {
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.map__results {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: "Roboto";
 }
 
 /*# sourceMappingURL=styles.css.map */

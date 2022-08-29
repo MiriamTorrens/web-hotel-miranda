@@ -1,0 +1,104 @@
+.map {
+    width: 80%;
+    margin: auto;
+    &__wraper{
+        height: 200px;
+        margin: 40px 0;
+    }
+    &__buttons {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       font-family: 'Roboto';
+       & button {
+           background-color: #333333;
+           color: #BEAD8E;
+           border: none;
+           border-radius: 8px;
+           margin-right: 20px;
+           padding: 10px;
+       }
+       & input,
+       & select {
+           border-radius: 8px;
+           padding: 10px;
+           padding-left: 10px;
+           margin-right: 10px;
+       }
+   }
+
+   &__results {
+       width: 600px;
+       margin: 0 auto;
+       margin-top: 20px;
+       font-family: 'Roboto';
+   }
+ }
+
+//    &__form {
+//        text-align: center;
+//        margin-top: 44px;
+//        width: 90%;
+//        margin: 0 auto;
+
+//        .contact__inputs {
+//            width: 100%;
+
+//            .contact__input {
+//                width: 100%;
+//                height: 67px;
+//                background-color: #F8F8F8;
+//                border: none;
+//                margin-top: 16px;
+//                padding-left: 20px;
+//            }
+//        }
+
+//        .contact__textarea {
+//            width: 100%;
+//            height: 175px;
+//            border: none;
+//            background-color: #F8F8F8;
+//            margin-top: 16px;
+//            padding-top: 20px;
+//            padding-left: 20px;
+//        }
+
+//        .contact__button {
+//            width: 258px;
+//            height: 60px;
+//            background: #BEAD8E;
+//            color: #FFFFFF;
+//            border: none;
+//            font-family: 'Roboto';
+//            font-style: normal;
+//            font-weight: 700;
+//            font-size: 16px;
+//            line-height: 19px;
+//            letter-spacing: 3.2px;
+//            margin-top: 36px;
+//        }
+//    }
+
+//    @media only screen and (min-width: 1000px) {
+//        .contact__map {
+//            width: 80%;
+//            height: 700px;
+//        }
+//        & form {
+//            width: 70%;
+//            margin: 0 auto;
+//            margin-top: 130px;
+
+//            .contact__inputs {
+//                column-count: 2;
+//                column-gap: 19px;
+//                column-fill: auto;
+//                width: 100%;
+//            }
+
+//            .contact__textarea {
+//                height: 250px;
+//            }
+//        }
+//    }
