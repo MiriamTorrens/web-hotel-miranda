@@ -43,6 +43,15 @@
             --swiper-theme-color: var(--tertiary-color);
         }
     }
+    &-dark {
+        background-color: var(--primary-color);
+        & h1{
+            color: #fff;
+        }
+    }
+    .number-dark{
+        color: var(--secondary-color);
+    }
     @media only screen and (min-width: 900px) {
         .facilities__slider{
             max-width: none;

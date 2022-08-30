@@ -1,0 +1,37 @@
+.about-video{
+    padding: 20px;
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    &__media{
+       width: 100%;
+       margin: 20px 0;
+    }
+    & p{
+        font-family: 'Old Standard TT';
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -1.16px;
+        color: var(--primary-color);
+    }
+    @media only screen and (min-width: 400px) {
+        & p {
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+    @media only screen and (min-width: 550px) {
+        & p {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+    @media only screen and (min-width: 700px) {
+        & p {
+            font-size: 46px;
+            line-height: 56px;
+        }
+    
+    }
+}
