@@ -4,7 +4,7 @@ let address;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 40.12103360652701, lng: -3.729048909994247 },
-    zoom: 5,
+    zoom: 4.5,
   });
   infoWindow = new google.maps.InfoWindow();
 
@@ -20,8 +20,8 @@ function initMap() {
 
   //Encontrar la dirección que se introduce en el input
   const geocoder = new google.maps.Geocoder();
-  const input = document.getElementById("inputAddress");
-  const button = document.getElementById("searchLocation");
+  const input = document.getElementById("input-adress");
+  const button = document.getElementById("search-location");
   button.addEventListener("click", () => {
     address = input.value;
     geocoder.geocode({ address: address }, function (results, status) {
@@ -61,25 +61,28 @@ function initMap() {
 
 //Devolver lista de hoteles ordenados
 const nearestButton = document.getElementById("nearest");
+const results = document.getElementById("results");
+const wraper = document.getElementById("results-wraper");
 nearestButton.addEventListener("click", () => {
+  wraper.classList.add("map__results-active");
   const destinations = hotels.map((hotel) => ({
     lat: hotel.lat,
     lng: hotel.lng,
   }));
   if (currentPosition.length) {
     if (address) {
-      document.getElementById("results").innerHTML = "";
+      results.innerHTML = "";
       calculateDistance(address, destinations);
     } else {
       const origin = new google.maps.LatLng(
         currentPosition[0].lat,
         currentPosition[0].lng
       );
-      document.getElementById("results").innerHTML = "";
+      results.innerHTML = "";
       calculateDistance(origin, destinations);
     }
   } else if (address) {
-    document.getElementById("results").innerHTML = "";
+    results.innerHTML = "";
     calculateDistance(address, destinations);
   } else {
     alert("Define your position");
@@ -124,36 +127,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       : "Error: Your browser doesn't support geolocation."
   );
   infoWindow.open(map);
-}
-
-//Crear el Select para las Comunidades Autónomas
-const communities = [
-  "Andalucía",
-  "Aragón",
-  "Asturias, Principado de",
-  "Balears, Illes",
-  "Canarias",
-  "Cantabria",
-  "Castilla y León",
-  "Castilla - La Mancha",
-  "Cataluña / Catalunya",
-  "Comunitat Valenciana",
-  "Extremadura",
-  "Galicia",
-  "Madrid, Comunidad de",
-  "Murcia, Región de",
-  "Navarra, Comunidad Foral de",
-  "País Vasco / Euskadi",
-  "Rioja, La",
-  "Ceuta",
-  "Melilla",
-];
-const select = document.getElementById("select");
-for (let community of communities) {
-  const option = document.createElement("option");
-  option.value = community;
-  option.text = community;
-  select.appendChild(option);
 }
 
 //Listado de hoteles en el mapa

@@ -69,6 +69,17 @@ header {
     letter-spacing: -1.2px;
     margin-top: 30px;
 }
+.button{
+    width: 217px;
+    height: 60px;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 2.8px;
+    border: none;
+    color: #fff;
+    background-color: var(--tertiary-color);
+}
 @media only screen and (min-width: 800px) {
     header {
         background-color: #000;
@@ -96,3 +107,4 @@ header {
 @import 'projects';
 @import 'contact';
 @import 'map';
+@import 'contact-form';

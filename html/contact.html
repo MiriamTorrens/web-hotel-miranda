@@ -70,55 +70,45 @@
       </div>
       <div class="map">
         <div class="map__wraper" id="map"></div>
-        <div class="map__buttons">
-          <button class="map__location" id="location">Current Location</button>
-          <input
-            type="text"
-            placeholder="Enter your address"
-            class="map__direction"
-            id="inputAddress"
-          />
-          <button class="map__nearest" id="nearest">
-            Find my nearest location
+        <div class="map__search">
+          <button class="map__search-location" id="location">
+            Current Location
           </button>
-          <button id="searchLocation">Search</button>
-          <select class="map__select" id="select"></select>
+          <div class="map__search-input">
+            <input
+              type="text"
+              placeholder="Enter your address"
+              class="map__search-direction"
+              id="input-adress"
+            />
+            <button class="map__search-button" id="search-location">
+              Search
+            </button>
+          </div>
         </div>
-        <div class="map__results">
-          <ul id="results"></ul>
+        <button class="map__button button" id="nearest">
+          Find my nearest location
+        </button>
+        <div class="map__results" id="results-wraper">
+          <ol id="results"></ol>
         </div>
       </div>
-      <!--
-        <form class="contact__form">
-          <div class="contact__inputs">
-            <input
-              type="text"
-              placeholder="Your full name"
-              class="contact__input"
-            /><br />
-            <input
-              type="text"
-              placeholder="Add phone number"
-              class="contact__input"
-            /><br />
+      <div class="contact-form">
+        <form>
+          <div class="contact-form__inputs">
+            <input type="text" placeholder="Your full name" class="name" />
+            <input type="text" placeholder="Add phone number" class="phone" />
             <input
               type="text"
               placeholder="Enter email address"
-              class="contact__input"
-            /><br />
-            <input
-              type="text"
-              placeholder="Enter subject"
-              class="contact__input"
-            /><br />
+              class="email"
+            />
+            <input type="text" placeholder="Enter subject" class="subject" />
           </div>
-          <textarea
-            class="contact__input contact__textarea"
-            placeholder="Enter message"
-          ></textarea>
-          <input type="submit" value="SEND" class="contact__button" />
+          <textarea placeholder="Enter message" class="message"></textarea>
+          <input type="submit" value="SEND" class="contact__button button" />
         </form>
-      </div> -->
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container">
@@ -188,7 +178,7 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="../js/script.js"></script>
+    <!-- <script type="text/javascript" src="../js/script.js"></script> -->
     <script type="text/javascript" src="../js/scriptMap.js"></script>
     <script
       async

@@ -1,0 +1,58 @@
+.contact-form{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        & input {
+            width: 100%;
+            height: 67px;
+            background-color: #F8F8F8;
+            border: none;
+            padding-left: 37px;
+            background-repeat: no-repeat;
+            background-position: 15px center;
+        }
+    }
+    input[type=submit]{
+        margin-top: 20px;
+    }
+    & textarea{
+        width: 100%;
+        height: 175px;
+        border: none;
+        background-color: #F8F8F8;
+        margin-top: 16px;
+        padding: 10px 37px;
+        background-repeat: no-repeat;
+        background-position: 15px 10px;
+    }   
+    .name {
+        background-image: url("../img/user.png");
+    }  
+    .phone {
+        background-image: url("../img/phoneInput.png");
+    }  
+    .email {
+        background-image: url("../img/emailInput.png");
+    }
+    .subject {
+        background-image: url("../img/subject.png");
+    } 
+    .message {
+        background-image: url("../img/pencil.png");
+    }
+    @media only screen and (min-width: 700px) {
+        &__inputs input{
+            width: 40%;
+        }
+        & textarea{
+            width: 82%;
+            height: 250px;
+        }
+    }
+}
