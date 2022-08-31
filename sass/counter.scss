@@ -1,22 +1,26 @@
 .counter{
+    text-align: center;
     padding: 20px;
-    max-width: 750px;
     margin: auto;
+    max-width: 850px;
+    & h1, & h5{
+        text-align: left;
+    }
     &__facts{
         padding: 30px 0;
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
         justify-content: center;
         &-item{
-            margin: 0 20px;
-            max-width: 200px;
+            padding: 20px 10px;
+            width: 255px;
             display: grid;
             column-gap: 10px;
             grid-template-columns: 20% 80%;
             background-image: url("../img/flecha.png");
             background-repeat: no-repeat;
-            background-position: right center;
+            background-position: 210px center;
             & img{
                 width: 100%;
             }
@@ -29,6 +33,7 @@
                 color: var(--primary-color);
             }
             & p{
+                text-align: left;
                 grid-column: 2;
                 font-family: 'Archivo';
                 font-weight: 400;
@@ -36,5 +41,9 @@
                 color: var(--title-color);
             }
         }
+    }
+    & img{
+        width: 100%;
+        max-width: 500px;
     }
 }
