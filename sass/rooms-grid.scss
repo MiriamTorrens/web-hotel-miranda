@@ -6,6 +6,7 @@
     justify-content: center;
     max-width: 950px;
     margin: auto;
+
     &__image{
        width: 290px;
        height: 200px;
@@ -54,6 +55,24 @@
         }
     }
     &__pagination{
-       text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 0.9em;
+       & button{
+        border: none;
+        background-color: #fff;
+       }
+       & span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            color: var(--primary-color);
+            
+       }
     }
 }
