@@ -1,0 +1,59 @@
+.rooms-grid{
+    text-align: center;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    max-width: 950px;
+    margin: auto;
+    &__image{
+       width: 290px;
+       height: 200px;
+       background-image: url("../img/slide2.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin: 40px auto;
+    }
+    &__icons{
+        position: relative;
+        margin-top: -55px;
+    }
+    &__text{
+        margin: 10px auto;
+        max-width: 300px;
+        & h1{
+            font-family: 'Old Standard TT';
+            font-weight: 400;
+            font-size: 1.7em;
+            line-height: 24px;
+            letter-spacing: -0.72px;
+            color: var(--primary-color);
+        }
+        & p{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 24px;
+            color: var(--title-color);
+            margin-top: 10px;
+        }
+        &-flex{
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Archivo';
+            font-weight: 700px;
+            font-size: 1em;
+            .rooms-grid__text-price {
+                color: var(--tertiary-color);
+            }
+            .rooms-grid__text-booking {
+                color: #BDBDBD;
+                cursor: pointer;
+            }
+        }
+    }
+    &__pagination{
+       text-align: center;
+    }
+}
