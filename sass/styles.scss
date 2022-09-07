@@ -80,10 +80,6 @@ header {
     color: #fff;
     background-color: var(--tertiary-color);
 }
-.span-active {
-    color: #fff;
-    background-color: var(--tertiary-color);  
-}
 @media only screen and (min-width: 800px) {
     header {
         background-color: #000;
@@ -117,3 +113,4 @@ header {
 @import 'restaurant';
 @import 'counter';
 @import 'rooms-grid';
+@import 'offers';

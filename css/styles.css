@@ -88,11 +88,6 @@ header a {
   background-color: var(--tertiary-color);
 }
 
-.span-active {
-  color: #fff;
-  background-color: var(--tertiary-color);
-}
-
 @media only screen and (min-width: 800px) {
   header {
     background-color: #000;
@@ -1166,10 +1161,6 @@ header a {
 .rooms-grid__image {
   width: 290px;
   height: 200px;
-  background-image: url("../img/slide2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 40px auto;
 }
 .rooms-grid__icons {
@@ -1217,10 +1208,14 @@ header a {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 0.9em;
+  margin-top: 30px;
 }
 .rooms-grid__pagination button {
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 .rooms-grid__pagination span {
   display: flex;
@@ -1229,6 +1224,85 @@ header a {
   width: 30px;
   height: 30px;
   color: var(--primary-color);
+}
+
+.offers {
+  padding: 0 10px;
+}
+.offers__wraper {
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  margin: auto;
+  padding: 20px 10px;
+  max-width: 800px;
+}
+.offers__image {
+  width: 100%;
+  height: 50vw;
+  max-height: 440px;
+}
+.offers__price1 {
+  margin: -85px 10px 0;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 1.4em;
+  text-align: right;
+  text-decoration-line: line-through;
+  color: var(--tertiary-color);
+}
+.offers__price2 {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 2em;
+  text-align: right;
+  color: #DE5777;
+  margin: 5px 10px;
+}
+.offers .small {
+  font-size: 12px;
+}
+.offers__title {
+  margin-top: 40px;
+}
+.offers__headline {
+  font-size: 3em;
+  line-height: 48px;
+}
+.offers__description, .offers__facilities {
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: var(--title-color);
+}
+.offers__text {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+}
+.offers__facilities {
+  margin: 20px auto;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 10px;
+}
+.offers__facilities img {
+  margin-right: 5px;
+}
+.offers__button {
+  margin-top: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 700px) {
+  .offers__text {
+    padding: 15px;
+    border-top: 5px solid var(--tertiary-color);
+    position: relative;
+    margin-top: -25px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
