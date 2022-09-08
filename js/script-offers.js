@@ -13,9 +13,9 @@ for (let i = 0; i < offers.length; i++) {
 const images = container.getElementsByClassName("offers__image");
 const titles = container.getElementsByClassName("offers__headline");
 for (image of images) {
-  images[1].setAttribute("src", "../img/slide2.jpg");
-  images[2].setAttribute("src", "../img/slide3.jpg");
-  images[3].setAttribute("src", "../img/slide4.jpg");
+  images[1].setAttribute("src", "./img/slide2.jpg");
+  images[2].setAttribute("src", "./img/slide3.jpg");
+  images[3].setAttribute("src", "./img/slide4.jpg");
 }
 for (title of titles) {
   titles[1].innerHTML = "Double Bed Room";

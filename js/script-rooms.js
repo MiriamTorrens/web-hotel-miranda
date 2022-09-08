@@ -54,13 +54,13 @@ function change(page) {
       for (image of images) {
         let random = Math.floor(Math.random() * (5 - 1) + 1);
         image.setAttribute("src", `../img/slide${random}.jpg`);
-        if (image.getAttribute("src") === "../img/slide1.jpg") {
+        if (image.getAttribute("src") === "./img/slide1.jpg") {
           title = "Minimal Duplex Room";
-        } else if (image.getAttribute("src") === "../img/slide2.jpg") {
+        } else if (image.getAttribute("src") === "./img/slide2.jpg") {
           title = "Double Bed Room";
-        } else if (image.getAttribute("src") === "../img/slide3.jpg") {
+        } else if (image.getAttribute("src") === "./img/slide3.jpg") {
           title = "Luxury Suite";
-        } else if (image.getAttribute("src") === "../img/slide4.jpg") {
+        } else if (image.getAttribute("src") === "./img/slide4.jpg") {
           title = "Single Bed Room";
         }
       }
