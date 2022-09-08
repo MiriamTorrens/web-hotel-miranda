@@ -506,12 +506,13 @@ header a {
 
 .video {
   background: var(--primary-color);
+  padding: 30px 20px;
 }
 .video__wraper {
-  padding: 30px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 .video__text {
   max-width: 400px;
@@ -520,6 +521,7 @@ header a {
   color: var(--tertiary-color);
 }
 .video__text h1 {
+  margin-top: 20px;
   color: #fff;
 }
 .video__text p {
@@ -529,12 +531,12 @@ header a {
   color: #C2C2C2;
 }
 .video__media {
-  margin-top: 30px;
-  max-width: 400px;
+  width: 100%;
+  height: 270px;
 }
 .video button {
   display: flex;
-  margin: auto;
+  margin: 20px auto;
   align-items: center;
   justify-content: center;
 }
@@ -550,7 +552,10 @@ header a {
     width: 35%;
   }
   .video__media {
-    width: 40%;
+    width: 400px;
+  }
+  .video button {
+    margin-top: 50px;
   }
 }
 
