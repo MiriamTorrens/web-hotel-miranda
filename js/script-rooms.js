@@ -53,7 +53,7 @@ function change(page) {
       const images = item.getElementsByClassName("rooms-grid__image");
       for (image of images) {
         let random = Math.floor(Math.random() * (5 - 1) + 1);
-        image.setAttribute("src", `../img/slide${random}.jpg`);
+        image.setAttribute("src", `./img/slide${random}.jpg`);
         if (image.getAttribute("src") === "./img/slide1.jpg") {
           title = "Minimal Duplex Room";
         } else if (image.getAttribute("src") === "./img/slide2.jpg") {
@@ -70,9 +70,6 @@ function change(page) {
     }
 
     spanArr.map((span) => {
-      // span.addEventListener("click", () => {
-      //   console.log(span.innerHTML);
-      // });
       if (parseInt(span.innerHTML) === page) {
         span.style.backgroundColor = "#BEAD8E";
         span.style.color = "white";
